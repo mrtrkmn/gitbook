@@ -1,4 +1,4 @@
-## L3- Bitcoin Blockchain
+# L3- Bitcoin Blockchain
 
 ![](../.gitbook/assets/blockchain-chain.png)
 

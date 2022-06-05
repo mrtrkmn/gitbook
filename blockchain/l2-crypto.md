@@ -1,4 +1,4 @@
-# L2 Cryptographic Hash Functions
+# L2- Cryptographic Hash Functions
 
 
 ## Properties of Cryptographic Hash Functions
