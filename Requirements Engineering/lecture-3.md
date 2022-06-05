@@ -39,7 +39,7 @@ RE represents the bridge from stakeholder goals into software development.
 
 #### Submodels
 
-![](../.github/assets/submodels-re.png)
+![](../.gitbook/assets/submodels-re.png)
 
 
 #### Role model and process model
@@ -134,7 +134,7 @@ However, **maintenance is difficult without well-documented requirements**
 
 - ADMiRE : Artefact Model for Domain-independent RE
 
-![](../.github/assets/admire-model.jpg)
+![](../.gitbook/assets/admire-model.jpg)
 
 
 - The flexibility of an artifact model is rooted in the selection of adequate artifacts
@@ -142,7 +142,7 @@ However, **maintenance is difficult without well-documented requirements**
 
 #### ADMiRE: Roles and Layers
 
-![](../.github/assets/admire-roles.jpg)
+![](../.gitbook/assets/admire-roles.jpg)
 
 
 

@@ -1,4 +1,7 @@
-### Properties of Cryptographic Hash Functions
+# L2 Cryptographic Hash Functions
+
+
+## Properties of Cryptographic Hash Functions
 
 1. Preimage Resistance  
   
@@ -18,7 +21,7 @@
 
 - Output of hash functions can be revealed with brute force if a salt is not used while hashing input. 
 
-### Merkle Trees
+## Merkle Trees
 
 - A Merkle Tree is a data structure using cryptographic hashes, basically a binary tree with hash pointers
 - It is used as efficient and secure way to verify large data structures
@@ -26,9 +29,9 @@
     - proof that a certain data block is contained in a Merkle Tree (Proof of Membership)
     - proof that  a certain data block is not contained in a sorted Merkle Tree (Proof of Non Membership)
 
-![](../.github/assets/merkle-tree.png)
+![](../.gitbook/assets/merkle-tree.png)
 
-#### Proof of Membership 
+### Proof of Membership 
 
 - We want to ensure that a certain data block is contained in the Merkle Tree without hashing the complete tree
 
@@ -38,4 +41,4 @@
 
 - This enables verification in log(n) time.
 
-![](../.github/assets/merkle-tree-pom.png)
+![](../.gitbook/assets/merkle-tree-pom.png)

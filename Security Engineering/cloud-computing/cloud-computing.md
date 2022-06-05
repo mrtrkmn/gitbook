@@ -174,7 +174,7 @@ Cloud Computing - 2022
 ### Cloud Technologies
 ---
 
-![Cloud Technologies](../.github/assets/cloud-techs.jpg)
+![Cloud Technologies](../.gitbook/assets/cloud-techs.jpg)
 
 ---
 
@@ -182,7 +182,7 @@ Cloud Computing - 2022
 ### From monitoring perspective
 ---
 
-![Cloud Technologies-Monitoring](../.github/assets/cloud-tech-2.jpg)
+![Cloud Technologies-Monitoring](../.gitbook/assets/cloud-tech-2.jpg)
 
 
 
@@ -432,7 +432,7 @@ Data Centers
 
 ### Comparison of Technologies 
 
-![](../.github/assets/comparison_of_tech.jpg)\
+![](../.gitbook/assets/comparison_of_tech.jpg)\
 
 
 
@@ -450,7 +450,7 @@ Data Centers
 
 ### NUMA Node of SuperMUC 
 
-![](../.github/assets/numa_node.png)
+![](../.gitbook/assets/numa_node.png)
 
 
 - 2 processors with 32 GB of memory 

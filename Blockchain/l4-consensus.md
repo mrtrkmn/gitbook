@@ -1,4 +1,4 @@
-# Consensus in Bitcoin
+# L4- Consensus in Bitcoin
 
 ## Imagine - Bitcoin with a Central Authority (CA)
 
@@ -37,7 +37,7 @@ Now, we are facing the problem of fairly choosing a random participant as the ce
 - Bitcoin adopts Proof-of-Work(PoW) as its Sybil control mechanism for validating the expenditure of the computational work
 - To avoid sybil attacks, we need to bind the probability of getting selected to a **scarce resource.** In PoW, that resource is proportional to your computational power. Thus, creating new identities would not give you an advantage regarding to how often your are chosen. 
 
-| ![](../.github/assets/pow.png) | ![](../.github/assets/pos.png) |
+| ![](../.gitbook/assets/pow.png) | ![](../.gitbook/assets/pos.png) |
 |---------------------------|---------------------------|
 |   Facilitates search puzzle | Coins are deposited to propose new block |
 | Requires large amount of tries | Requires large amount of stake |
@@ -70,7 +70,7 @@ A general is responsible for one division. These generals communicate by messeng
 
 It can be shown that if more or equa to one third of the generals are malicious, it is impossible for the honest nodes to derive a common plan. 
 
-![](../.github/assets/byzantine-attack.png)
+![](../.gitbook/assets/byzantine-attack.png)
 
 ## Distributed Consensus 
 
@@ -93,7 +93,7 @@ It can be shown that if more or equa to one third of the generals are malicious,
 
 - Bitcoin's approach to decentralized consensus was completely new and very different from older approaches that resembled traditional voting and scaled very poorly to more than a handful of nodes. 
 
-|  ![](../.github/assets/ongoing-consensus.png) | ![](../.github/assets/sybil-control-mechanism.png)  | ![](../.github/assets/incentives.png)
+|  ![](../.gitbook/assets/ongoing-consensus.png) | ![](../.gitbook/assets/sybil-control-mechanism.png)  | ![](../.gitbook/assets/incentives.png)
 |------------------------------------------|------------------------------------------------|------------------------------|
 | Probabilistic consensus: The consensus mechanism is an ongoing process in Bitcoin. Therefore, the order of blocks or transactions is never 100% final. | Proof of Work: The network selects a random node to process a new block using Proof-Of-Work. As we will see later, this ensures that probabilistic consensus can be reached asssuming over 50% are honest | Incentivized nodes: The network incentivizes nodes to participate in the consensus algorithm. They receive Bitcoins for created blocks which are included in the longest chain.|
 
@@ -136,17 +136,17 @@ What happens to transactions which are included in the orphan block(s)?
 - As a consequence, the transactions in an orphan block are simply considered as unconfirmed, waiting to be included in a later block. 
 
 
-![](../.github/assets/tx-orphan-1.png)
+![](../.gitbook/assets/tx-orphan-1.png)
 
 ----- 
-![](../.github/assets/tx-orphan-2.png)
+![](../.gitbook/assets/tx-orphan-2.png)
 
 -----
-![](../.github/assets/tx-orphan-3.png)
+![](../.gitbook/assets/tx-orphan-3.png)
 
 ---- 
 
-![](../.github/assets/tx-orphan-4.png)
+![](../.gitbook/assets/tx-orphan-4.png)
 
 
 ----
@@ -156,28 +156,28 @@ What happens to transactions which are included in the orphan block(s)?
 Idea: We use the search puzzle introduced in the chapter about crytographic  foundations. The header of the has has to be included in Y. Bitcoin uses double SHA-256. (sha256(sha256(block)))
 
 
-![](../.github/assets/puzzle-1.png)
+![](../.gitbook/assets/puzzle-1.png)
 
 ------
-![](../.github/assets/puzzle-2.png)
+![](../.gitbook/assets/puzzle-2.png)
 
 ------
-![](../.github/assets/puzzle-3.png)
+![](../.gitbook/assets/puzzle-3.png)
 
 ------
-![](../.github/assets/puzzle-4.png)
-
-------
-
-![](../.github/assets/puzzle-5.png)
+![](../.gitbook/assets/puzzle-4.png)
 
 ------
 
-![](../.github/assets/puzzle-6.png)
+![](../.gitbook/assets/puzzle-5.png)
 
 ------
 
-![](../.github/assets/puzzle-7.png)
+![](../.gitbook/assets/puzzle-6.png)
+
+------
+
+![](../.gitbook/assets/puzzle-7.png)
 
 ------
 
@@ -194,7 +194,7 @@ Idea: We use the search puzzle introduced in the chapter about crytographic  fou
     - Every node uses the same time and version
 
 
-![](../.github/assets/search-puzzle.png)
+![](../.gitbook/assets/search-puzzle.png)
 
 
 
@@ -220,19 +220,19 @@ Idea: We use the search puzzle introduced in the chapter about crytographic  fou
 
 - The longest chain is considered as the chain with the accumulated highest difficulty
 
-![](../.github/assets/difficulty-calculation.png)
+![](../.gitbook/assets/difficulty-calculation.png)
 
 
 ## The Bitcoin Currency
 
-![](../.github/assets/bitcoin-currency.png)
+![](../.gitbook/assets/bitcoin-currency.png)
 
 
 ## Mining Puzzle
 
 > Miners incentives 
 
-| ![](../.github/assets/mining-reward.png) | ![](../.github/assets/transaction-fees.png) |
+| ![](../.gitbook/assets/mining-reward.png) | ![](../.gitbook/assets/transaction-fees.png) |
 |-------------|-----------|
 | For a newly created block, the miner is allowed to issue new Bitcoins to his wallet. | Every transaction includes a transaction fee. |
 | The mining reward was 6.25 bitcoins as November 2021. This incentive, which was originally 50 Bitcoins, is cut in half roughly every four years or after each set of 210.000 blocks are mined. This is known as **halving** and it limits the total global supply of Bitcoin, so prices could rise if demand remains strong. | It is the difference between all inputs and outputs. |

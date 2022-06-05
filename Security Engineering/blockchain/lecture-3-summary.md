@@ -1,12 +1,12 @@
 ## Bitcoin Blockchain
 
-![](../.github/assets/blockchain-chain.png)
+![](../.gitbook/assets/blockchain-chain.png)
 
 ## Account-based Ledger
 
 Transactions            |  World State
 :-------------------------:|:-------------------------:
-![](../.github/assets/transactions.png)   |  ![](../.github/assets/world-state.png)
+![](../.gitbook/assets/transactions.png)   |  ![](../.gitbook/assets/world-state.png)
 
 - Intuitively: We consider Bitcoin to use an account-based ledger. However, an account-based approach takes a lot of effort to track the balances of every account. 
 
@@ -18,7 +18,7 @@ Transactions            |  World State
 
 ## Transaction-based Ledger 
 
-![](../.github/assets/transaction-based-ledger.png)
+![](../.gitbook/assets/transaction-based-ledger.png)
 
 - Transactions (Tx) have a number of inputs and a number of outputs
     - Inputs (Txin): Former outputs, that are being consumed
@@ -29,11 +29,11 @@ Transactions            |  World State
 
 ### Transactions Connected by Inputs and Outputs 
 
-![](../.github/assets/transactions_ins_outs.png)
+![](../.gitbook/assets/transactions_ins_outs.png)
 
 ## Transaction-based ledger 
 
-![](../.github/assets/transaction-based-ledger-table.png)
+![](../.gitbook/assets/transaction-based-ledger-table.png)
 
 Example: 
 
@@ -58,7 +58,7 @@ Two or more parties can combine their inputs and create one output. Of course, i
 
 ## Anotomy of the Bitcoin Blockchain
 
-![](../.github/assets/anatomy-of-the-bitcoin.png)
+![](../.gitbook/assets/anatomy-of-the-bitcoin.png)
 
 - Raw data is on disk 
 - Miners and full nodes organize their data in a certain way. (Bitcoin core)
@@ -66,7 +66,7 @@ Two or more parties can combine their inputs and create one output. Of course, i
 
 ## A newly Created Transactions Way into a Block
 
-![](../.github/assets/transaction-path-to-a-block.png)
+![](../.gitbook/assets/transaction-path-to-a-block.png)
 
 
 ## Storing Bitcoins
@@ -76,7 +76,7 @@ Two or more parties can combine their inputs and create one output. Of course, i
 - Different approaches for storing and managing secret keys lead to different trade-offs between **availability**, **security**, **convenience**
 
 
-![](../.github/assets/storing-bitcoins.png)
+![](../.gitbook/assets/storing-bitcoins.png)
 
 - Availability: being able to access the keys when one wants to 
 - Security: restricting access to the keys

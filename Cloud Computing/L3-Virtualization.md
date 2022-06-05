@@ -1,3 +1,4 @@
+# L3- Virtualization
 
 ### Objectives of Virtualization
 
@@ -44,7 +45,7 @@
 
 ### Bare-Metal Virtualization 
 
-![](../.github/assets/bare-metal.png)
+![](../.gitbook/assets/bare-metal.png)
 
 - As multiple OSs should function in a single machine, here
     - hypervisor acts at Ring 0
@@ -100,7 +101,7 @@
     - Useually, OS maintains the mapping of virtual memory to physical memory
     - Adv: increased security, isolation, freeing applications
     - 
-    ![](../.github/assets/memory-impact.jpg)
+    ![](../.gitbook/assets/memory-impact.jpg)
 
 
 
@@ -114,7 +115,7 @@
     - The shadow paging process takes 3 to 400 times more cycles native situations
     - 
 
-    ![](../.github/assets/memory-impact-v2.jpg)
+    ![](../.gitbook/assets/memory-impact-v2.jpg)
 
 
 ### Para Virtualization
@@ -149,4 +150,4 @@
     - To do so, one more high priority layer was introduced at the hardware level
     - VMM works at his level and guest OS could operate at Ring 0
     - 
-    ![](../.github/assets/vt-x.jpg)
+    ![](../.gitbook/assets/vt-x.jpg)

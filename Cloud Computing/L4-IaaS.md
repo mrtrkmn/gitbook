@@ -1,4 +1,4 @@
-# Infrastructure as a Service - AWS
+# L4- IaaS - AWS
 
 - AWS started IaaS service model
 	- Compute
@@ -7,7 +7,7 @@
 
 ## AWS - Resource Distribution 
 
-![](../.github/assets/resource-distribution.png)
+![](../.gitbook/assets/resource-distribution.png)
 
 
 
@@ -58,7 +58,7 @@ for new highend Intel processors
 ## Xen Hypervisor
 
 
-![](../.github/assets/xen-hyper.png)
+![](../.gitbook/assets/xen-hyper.png)
 
 - Three level of virtualization
 
@@ -76,7 +76,7 @@ for new highend Intel processors
 
 ## Nitro Hypervisor
 
-![](../.github/assets/nitro-hyper.png)
+![](../.gitbook/assets/nitro-hyper.png)
 
 
 - Special interface cards
@@ -106,11 +106,11 @@ for new highend Intel processors
 - Amazon Elastic File System (Amazon EFS)
 - Amazon Simple Storage Service (Amazon S3)
 
-![](../.github/assets/aws-storage.png)
+![](../.gitbook/assets/aws-storage.png)
 
 ## Storage in Data Centers
 
-![](../.github/assets/storage-data-centers.png)
+![](../.gitbook/assets/storage-data-centers.png)
 
 
 ## Local storage
@@ -121,7 +121,7 @@ for new highend Intel processors
 
 ## RAID
 
-![](../.github/assets/raid.png)
+![](../.gitbook/assets/raid.png)
 
 
 ## Non-volatile memory, FLASH
@@ -186,7 +186,7 @@ for new highend Intel processors
 
 ## Storage Area Network
 
-![](../.github/assets/san.png)
+![](../.gitbook/assets/san.png)
 
 - SAN protocols
  	- Fibre channel, iSCSI, ATA over Ethernet (AoE), HyperSCSI
@@ -206,7 +206,7 @@ for new highend Intel processors
 
 ## Network Attached Storage
 
-![](../.github/assets/nas.png)
+![](../.gitbook/assets/nas.png)
 
 
 - File server attached to the network
@@ -227,7 +227,7 @@ for new highend Intel processors
 ## Storage Virtualization
 
 
-![](../.github/assets/storage_virt.png)
+![](../.gitbook/assets/storage_virt.png)
 
 
 - Block virtualization or file virtualization
@@ -340,16 +340,16 @@ for new highend Intel processors
 	- You pay for address independent of the usage
 - Account limit of number of VMs of a certain type
 
-![](../.github/assets/ec2-lifecycle.png)
+![](../.gitbook/assets/ec2-lifecycle.png)
 
 
 
 
-![](../.github/assets/ec2-cmp-1.png)
+![](../.gitbook/assets/ec2-cmp-1.png)
 
 ## Lifecycle
 
-![](../.github/assets/lifecycle-comp.png)
+![](../.gitbook/assets/lifecycle-comp.png)
 
 
 

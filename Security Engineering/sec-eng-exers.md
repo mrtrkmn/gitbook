@@ -24,7 +24,7 @@ Which principles have been incorporated in the current architecture?
 
 Which principles have been neglected? What are potential problems resulting from the neglected principles?
 
-![](../.github/assets/sec-ex-1-img.png)
+![](../.gitbook/assets/sec-ex-1-img.png)
 
 
 

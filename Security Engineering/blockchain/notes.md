@@ -26,7 +26,7 @@
     - proof that a certain data block is contained in a Merkle Tree (Proof of Membership)
     - proof that  a certain data block is not contained in a sorted Merkle Tree (Proof of Non Membership)
 
-![](../.github/assets/merkle-tree.png)
+![](../.gitbook/assets/merkle-tree.png)
 
 #### Proof of Membership 
 
@@ -38,4 +38,4 @@
 
 - This enables verification in log(n) time.
 
-![](../.github/assets/merkle-tree-pom.png)
+![](../.gitbook/assets/merkle-tree-pom.png)
