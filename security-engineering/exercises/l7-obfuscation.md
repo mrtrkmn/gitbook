@@ -1,4 +1,4 @@
-# Obfuscation Exercises
+# Obfuscation
 
 ## General Questions
 
