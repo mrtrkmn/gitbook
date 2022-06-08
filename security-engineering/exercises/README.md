@@ -1,1 +1,1 @@
-# Security Engineering Exercises
+# Exercises
