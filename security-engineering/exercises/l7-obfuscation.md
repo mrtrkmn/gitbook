@@ -4,17 +4,17 @@
 
 1. Which kind of attacker does software obfuscation aim to protect against? 1P
 
- a. Man-in-the-middle (MITM)
-    > attacks communication channels (e.g replays messages)
- b. Remote attacker 
-    > exploits vulnerabilities (e.g buffer-overflows)
- c. Man-at-the-end (MATE)
-    > reverse engineers software (e.g steals intellectual property)
+ -  Man-in-the-middle (MITM)
+    -  attacks communication channels (e.g replays messages)
+ -  Remote attacker 
+    -  exploits vulnerabilities (e.g buffer-overflows)
+ -  Man-at-the-end (MATE)
+    - reverse engineers software (e.g steals intellectual property)
 
 2. What are the 2 types of attacker goals when attacking obfuscated programs ? 1P 
 
-    a. Stealing intellectual property (e.g algorithm)
-    b. Stealing secret data from software (e.g keys, passwords)
+    -  Stealing intellectual property (e.g algorithm)
+    -  Stealing secret data from software (e.g keys, passwords)
 
 3. Explain in 3-5 sentences how software diversity works
 
