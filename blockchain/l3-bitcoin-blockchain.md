@@ -1,4 +1,4 @@
-# Bitcoin Basics Recap 
+# L3- Bitcoin Basics Recap 
 
 
 Bitcoin has three key properties: 
