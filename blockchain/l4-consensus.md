@@ -263,3 +263,32 @@ Idea: We use the search puzzle introduced in the chapter about crytographic  fou
 - The fee is calculated in Satoshi/byte
 
 - 1 Satoshi equals 10^-8 Bitcoin. Smallest value in Bitcoin network. 
+
+##  Coinbase Transaction
+
+- The coinbase transactionis the first transaction in a block 
+    - It has a Txin that references no Txout (called coinbase)
+
+- The miner who finds the block is entitled to the coinbase transaction and therefore the block reward consisting out of 
+    - Block reward (newly available Bitcoins which are introduced in the system)
+    - Transaction fees
+
+- The contents of the coinbase transaction are  
+    - The block height 
+    - Up to 100 arbitrary bytes that can be put into the transaction input 
+
+## Mining Pools 
+
+With increasing difficulty, miners face problems:
+
+- Hardware costs are high (high fixed costs)
+- Electricity and cooling costs are high (high variable costs)
+
+- Decreasing market share (own hash rate vs overall hash rate)
+- A block is either found or not > no condolance reward
+
+Solution: 
+- Miners work together in mining pools to stabilize their monthly income 
+- A pool is organized by the pool manager. 
+
+
