@@ -129,3 +129,150 @@ To prevent both problems, the new community has to make the new chain/software i
 - Improved privacy and efficiency of the network. 
 
 
+## Attacking the Consensus Mechanism 
+
+Is it possible to steal bitcoins ?  
+
+No: Since UTXOs are secured with the hash of the public key of a user, the attacker cannot generate a valid transaction spending these UTXOs 
+
+Is it possible to block a participant (Wallet Owner) in the blockchain network ?
+
+Assume that a malicious node wants to block all transactions by Bob. This malicious node was selected randomly by the network to propose the new block. It does not include the transaction from Bob, blocking this transaction from getting into its block. However, the next random node (if it is honest) will include Bobs transaction. 
+
+## Double Spending 
+
+The idea of digital cash did evolve around the idea that we need to prevent a double spend. Two transactions spending the same Txout is somehow hard, but not impossible. We will go into the details of this attack. 
+
+![](../.gitbook/assets/double_spending.png)
+
+Alice wants to buy a music file from Bob's online shop with Bitcoin. She creates a transaction which sends the Bitcoins to Bob. An honest node sees Alice's transaction and includes it in its block. Bob sees the new block and sees his transaction included in it. He sends the file to Alice, in good faith to have his money. 
+
+So far so good: What are the options for Alice to "double spend" the Bitcoins she sent to Bob ? 
+
+Take a look at the underlying blockchain:
+
+- The blue block (block 3a) contains Alice valid transaction to Bob
+- After an honest node proposed this block, Alice was selected to propose the new block. 
+- What can she do ? 
+    - Option 1: Build on top of block 3a, she accepts the fact that the transaction has happened. 
+    This is not what she wants, she wants to double spend !
+    - Option 2: Build on top of block 2 a new block 3b (purple), not containing the transaction she sent to Bob, but a transaction spending the same coins (she would have sent to Bob) to herself. This is described as forking. 
+
+![](../.gitbook/assets/double-spending.png)
+
+**Does this mean double spending is possible ?**
+
+No. It is impossible to create a valid block or blockchain with two transactions consuming the same UTXO. What happens is that two "realities" are created. Block 3a(blue) declares a reality where Bob is paid and block 3b (purple) declares a reality in which Alice sends the money to herself. 
+
+**How is this conflict resolved?**
+The next node that get selected proposing a new block resolves the issue. It has to select the block on which it wants to create its new block. As all nodes adopt the longest chain, one reality (one of the blocks 3) is "orphaned", meaning this block does not have any relevance to the network anymore. 
+
+![](../.gitbook/assets/double-spending-2.png)
+
+**When is the attack successful ?**
+
+The attack is successful, if Alice convinces the network that her block (purple block) is the valid block that should be included in the longest blockchain. 
+
+From our story, we know that the blue block is the "valid" block. From the perspective of an individual node, both blocks are equally valid. 
+
+**What should Bob do to prevent such an attack?**
+
+Bob should wait until it is clear that the payment to him is actually included in the longest blockchin, ideally with several confirmations (blocks on top of the block containing his transaction) before sending the file. 
+
+![](../.gitbook/assets/double-spending-3.png)
+
+
+## Replay Attack 
+
+A replay attack occurs when an attacker re-submits the same transaction to the network several times and gets it executed every time. 
+
+- Let's say Alice has a number of Bitcoins. 
+- However, the blockchain is about to undergo a **hard fork** that will divide the blockchain into two parts, legacy and the new blockchain. 
+- After the split, Alice owns the same number of cryptocurrencies on both blockchains and she decides to send 5 Bitcoins to Bob on the legacy blockchain to pay her debt. 
+
+- The transaction eventually gets included in a block on the legacy chain and Bob receives his coins. 
+
+- Although he is paid, Bob realizes that he can receive even more coins just by replicating the same transaction of Alice on the new chain. 
+- Since addresses stay the same, this "repetition" of the transaction is validated by the miners on the new blockchain. 
+- With this, Bob has successfully performed a replay attack. 
+
+
+> **Note: A person who joins the network after the hard fork is not vulnerable to the replay attack as their address has no transactoin history in either of the chains.**
+
+## 51% Attack 
+
+A 51% attack is the worst possible scenario in a blockchain (based on PoW as consensus mechanism) This means that more than 50 % of the hash power belongs to one entity and this entity uses this power maliciously. 
+This attack enables: 
+- History rewriting: The attacker can build a blockchain with the highest accumulated value, defining all contents: 
+    - Blocking/ DoS-ing addresses/ users
+    - Collecting all mining rewards
+    - Creating successful double-spending patterns (orphaning many blocks)
+
+However: 
+- Cannot invent money, cannot propose invalid blocks or transactions, as they would simply be rejected. 
+- As of the high hash power, the attacker is highly invested. 
+- Entities highly invested have no interest in destroying the network, as they profit the most from it.
+
+
+> A successful executed 51% attack would destroy the trust in the system and with that, the value of the currency in the system. 
+
+
+## Selfish-mining Attack 
+
+A selfish-mining attack exploits the probability to be able to propose two blocks one after another. 
+
+It works as follows:
+
+- The attacking node finds a new block 3A, but does not propose it to the network.
+    - **Possibility A**: The node finds a second block 4A building on its block 3A. The network is still at block 2. When the network finds another block 3B, the attacker publishes both block 3A and 4A, making the new 3B an orphan block. The network has worked on an old chain, practically wasting its power. 
+
+    - **Possibility B:** When the network proposes a block 3B before the attacker finds a block 4A, the attacker publishes 3A, hoping the network will select block 3A with probability alpha. 
+
+> Attacker is possible for hashing power minimum of 25% with alpha = 50% and 33% with alpha = 0 %
+
+![](../.gitbook/assets/selfish-mining.png)
+
+
+## Bitcoin Transaction Throughput 
+
+In the case of Bitcoin, the current technology and protocol introduces a theoretical maximum transaction throughput, determined by three factors:
+
+![](../.gitbook/assets/bitcoin_throughput.png)
+
+## Blockchain Size 
+
+The blockchain size increases by at most 1 MB every 10 Minutes
+
+![](../.gitbook/assets/bitcoin-size.png)
+
+
+## Energy Consumption of Bitcoin's Proof-of-Work 
+
+Difficulties:
+
+- Miners do not disclose their energy consumption and the hardware used by them. 
+- We calculate with the hash rate and the most efficient mining hardware. 
+
+![](../.gitbook/assets/bitcoin-pow.png)
+
+- Energy consumption is one of the main issues of Bitcoin. Critics call it an energy guzzler, while supporters praise it for being less energy-intesive than the present global economy. 
+
+- The amount of energy that is consumed with Proof-of-Work cannot be underestimated, however, it is also not a reason to demonize the system when there is **no better solution** right now. 
+
+![](../.gitbook/assets/energy-consumption-bitcoin.png)
+
+## Bitcoin's Challenges 
+
+- Bitcoin script is **limited in its expressive power!**
+    - **Ethereum** and other solutions provide a Turing complete Smart Contract language! 
+
+- Bitcoin does **not scale**/ is too slow !
+    - Second layer solutions like **Lightning Network** enable higher transaction throughput with lower fees. 
+
+- Bitcoin is **too volatile!**
+    - Stable coins either pegged by fiat currencies (Tether) or by collateral (Dai) provide more stable prices
+
+- **Regulations**
+    - On one hand: over-regulations of cryptocurrencies in United States 
+    - On the other hand: little or no regulations in many other countries. 
+
