@@ -216,4 +216,6 @@ Variables and constants of bytecode program stored in array: data
 
 ![](../.gitbook/assets/vt_obfs_2.png)
 
-
+{% file src="../.gitbook/assets/pdfs/obfuscation.pdf" %}
+Notes on Obfuscation 
+{% endfile %} 
