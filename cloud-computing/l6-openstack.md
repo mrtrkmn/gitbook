@@ -1,6 +1,5 @@
-# L6- Openstack 
+# L6- Openstack
 
-
-[OpenStack Slide](../.gitbook/assets/openstack.pdf)
-
-<embed src="../.gitbook/assets/openstack.pdf" type="application/pdf">
+{% file src="../.gitbook/assets/openstack.pdf" %}
+OpenStack Slides
+{% endfile %}
