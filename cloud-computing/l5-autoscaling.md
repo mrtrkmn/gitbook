@@ -250,4 +250,155 @@ Native Cloud Applications are scalable; capacity can grow to very large workflow
 - **Policies have a cooldown period specification**
     - Only after this time, breaches are handled again. 
 
+
+## Predictive Autoscaling 
+
+![](../.gitbook/assets/predictive-scaling.png)
+
+## AWS Predictive Autoscaling 
+
+**Determines proactively minimum of auto scaling group**
+- Supported metrics 
+    - CPU utilization 
+    - Network in/out 
+    - Custom metric with aggregation method over VMs 
+- Threshold value 
+- Forecast update period 
+- Cool down time 
+
+- **Forecast only mode vs forecast and scale mode** 
+
+![](../.gitbook/assets/aws-predictive.png)
+
+## Load balancing 
+
+![](../.gitbook/assets/load-balancing.png)
+
+- **Important in case of multiple service instances**
+- **Scaling out**
+    - Works only if all replicas are equally busy 
+    - Load balancer required to distribute requests 
+
+- **Goals**
+
+    - Efficient utilization of a set of resources 
+    - Exploit aggregated capacity of replicas to reduce response time and failure rates 
+    - Increase availability 
+        - LB performs periodic health checks 
+        - Stops accessing faulty replicas 
+        - Restart faulty replicas 
+
+- **Enables non-disruptive management**
+    - In case of provisioning and de-provisioning of resources 
+- **Implementation**
+    - Hardware: Multi-level switches 
+    - Software 
+
+## Multi-layer Load balancing 
+
+![](../.gitbook/assets/multi-layer.png)
+
+- **Layers**
+    - Different Goals
+    - Interaction 
+
+- **Strategies**
+    - Preemptive vs non-preemptive
+    - Static vs dynamic 
+
+- **Scalability**
+
+
+## Static vs Dynamic Load Balancing
+
+- **Static**
+    - No feedback 
+    - E.g (weighted) round robin 
+- **Dynamic**
+    - Feedback on the status
+
+![](../.gitbook/assets/feedback.png)
+
+
+## Dynamic Load Balancing 
+
+![](../.gitbook/assets/dynamic-lb.png)
+
+- **Distributed:** Nodes collaborate
+- **Cooperative:** ... have the same goal 
+- **Non-Cooperative:** ... different goals 
+- **Centralized:** one central LB 
+- **Semi-distributed:** Nodes are partitioned and one LB responsible for partition 
+
+## Approaches for web applications 
+
+- **Round-robin DNS**
+    - Domain name mapped to multiple IP addresses
+    - IP addresses are given to clients in a round-robin fashion. (Valid for a certain time)
+- **DNS delegation**
+    - Structure domain (in.tum.de) into two zones
+    - Each zone has its own name server 
+    - DNS request is forwarded (delegated) to both zones 
+    - The one resolving the address first wins the request 
+- **Client-side random sampling**
+    - Client receives a list of IP addresses 
+    - It select randomly one to connect
+
+- **Server-side load balancing**
+    - LB receives requests at a given port and distributes them. 
+
+## Session Persistance 
+
+- **Situation**
+    - Information must be kept over multiple requests(Sessions)
+- **Handling sessions**
+    - Stickiness: requests go to the same server 
+    - Sharing of session data 
+- **Characterization of session**
+    - Client address 
+    - Or cookies 
+
+## Classes of LB Algorithms 
+
+- **Class-aware**
+    - Based on classification of requests into sensitive, best-effort, undesired 
+    - E.g based on port numbers 
+
+- **Content-aware**
+    - Based on request content, e.g URL 
+    - E.g directing similar requests to same server to exploit access to same information 
+
+- **Client-aware**
+    - Based on packet source 
+    - Can improve performance as before 
+
+##  Load Balancing Algorithms 
+- **Round Robin and Weighted Round Robin**
+    - Weight represents capability of server 
+- **Least Connection and Weighed Least Connection** 
+    - Distributes to server with the least number of active connections 
+- **Resource Based** 
+    - CPU Load of the servers is taken into account
+- **Weighed Response Time** 
+    - The response time for a health check is used to compute the weights. 
     
+## AWS Elastic Load Balancing 
+
+- **Distributes incoming traffic across the instances in the Auto Scaling Group** 
+    - Can use load balancer metrics (request counts per target) for auto scaling 
+    - Can use it for health checks 
+- **Classic Load Balancer** 
+    - Listeners checks client connection on a certain port (http, https, TCP) 
+    - Distributes requests evenly across availability zones or evenly across all registered instances in the target group 
+
+- **Application Load Balancer (VPC only, Application Layer)** 
+    - Routes HTTP requests based on contents to specific target groups 
+- **Network Load Balancer (VPC only, Transport Layer)** 
+    - Forwards TCP packets for a certain part to a target group 
+- **Gateway Load Balancer (VPC only, Transport and Network Layer)**
+    - Forwards ingress traffic to network appliances, like intrusion detection or monitoring 
+    - Forwards response traffic from network appliances to target after inspection.
+
+
+
+
