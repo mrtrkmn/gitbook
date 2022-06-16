@@ -1,4 +1,4 @@
-# Etherum- Decentralized Applications 
+# L6 Summary: Etherum- Decentralized Applications 
 
 ## Deploying a Smart Contract 
 
