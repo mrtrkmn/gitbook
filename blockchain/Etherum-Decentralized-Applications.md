@@ -239,4 +239,8 @@ Test networks provide a convenient way to publicly deploy and test smart contrac
 
 
 
+Nice resources to look at: 
+
+- https://www.ibm.com/topics/smart-contracts
+
 
