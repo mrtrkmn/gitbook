@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Blockchain](README.md)
+* [Blockchain](blockchain/README.md)
   * [L1- Intro](blockchain/l1-intro.md)
   * [L2- Cryptographic Hash Functions](blockchain/l2-crypto.md)
   * [L3- Bitcoin Basics Recap](blockchain/l3-bitcoin-blockchain.md)
