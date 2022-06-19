@@ -7,7 +7,7 @@
   * [L4- Consensus in Bitcoin](blockchain/l4-consensus.md)
   * [L5- Evolution of the Bitcoin Network](blockchain/l5-evolution-of-bitcoin.md)
   * [L6- Ethereum Basics](blockchain/l6-ethereum-basics.md)
-  * [L6 Summary: Etherum- Decentralized Applications](blockchain/l6-summary-ethereum.md)W
+  * [L6 Summary: Etherum- Decentralized Applications](blockchain/l6-summary-ethereum.md)
   * [Exercises](blockchain/exercises/README.md)
     * [L3- Bitcoin Basics](blockchain/exercises/l3-bitcoin-basics.md)
     * [L4- Consensus](blockchain/exercises/l4-consensus.md)
