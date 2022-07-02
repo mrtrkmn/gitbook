@@ -1,5 +1,6 @@
 # Table of contents
 
+* [README](README.md)
 * [Blockchain](blockchain/README.md)
   * [L1- Intro](blockchain/l1-intro.md)
   * [L2- Cryptographic Hash Functions](blockchain/l2-crypto.md)
@@ -7,7 +8,7 @@
   * [L4- Consensus in Bitcoin](blockchain/l4-consensus.md)
   * [L5- Evolution of the Bitcoin Network](blockchain/l5-evolution-of-bitcoin.md)
   * [L6- Ethereum Basics](blockchain/l6-ethereum-basics.md)
-  * [L6 Summary: Etherum- Decentralized Applications](blockchain/l6-summary-ethereum.md)
+  * [L6 Summary: Etherum- Decentralized Applications](blockchain/l6-summary-etherum-decentralized-applications.md)
   * [Exercises](blockchain/exercises/README.md)
     * [L3- Bitcoin Basics](blockchain/exercises/l3-bitcoin-basics.md)
     * [L4- Consensus](blockchain/exercises/l4-consensus.md)
