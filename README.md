@@ -26,3 +26,6 @@ This website contains lecture notes and information given at Technical Universit
   * [Exercises](security-engineering/exercises/README.md)
     * [Obfuscation](security-engineering/exercises/l7-obfuscation.md)
     * [Security Principles](security-engineering/exercises/sec-eng-exers.md)
+    * [Software Based Integrity Protection](security-engineering/exercises/l9-software-based-integrity-protection.md)
+    * [Hardware Based Integrity Protection](security-engineering/exercises/l10-hardware-integrity-protection.md)
+    
