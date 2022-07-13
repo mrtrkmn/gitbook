@@ -26,19 +26,19 @@ Generally, the Operating System operates in two modes
 
 ## Kernel Mode 
 
-	- In this mode, OS allows all CPU instructions to execute on the underlying hardware.
-	- Kernel codes do not execute in the USER mode. 
+- In this mode, OS allows all CPU instructions to execute on the underlying hardware.
+- Kernel codes do not execute in the USER mode. 
 
 ## User Mode
-	- OS allows only a few instructions to be executed (for e.g The instructions that process data -- User applications)
-	- If the user applications ahave to execute the privileged instructions, the applicatoins ask kernels to the work (for eg via a system call)
-	- User applications can't open files, send network packets, print to the screen, or allocate memory. 
+- OS allows only a few instructions to be executed (for e.g The instructions that process data -- User applications)
+- If the user applications ahave to execute the privileged instructions, the applicatoins ask kernels to the work (for eg via a system call)
+- User applications can't open files, send network packets, print to the screen, or allocate memory. 
 
-## NOTE
+**NOTE**
 
-	- Kernel processes run in the KERNEL mode with the supervisor privilege or superuser privilege
-	- User processes run in the USER mode with the user privilege
-	- OS manages processes and threads. 
+- Kernel processes run in the KERNEL mode with the supervisor privilege or superuser privilege
+- User processes run in the USER mode with the user privilege
+- OS manages processes and threads. 
 
 
 # System Calls and CPUs 
@@ -115,7 +115,7 @@ Generally, the Operating System operates in two modes
 	- The page table in VMM is called as a **shadow page** table
 	- The shadow paging process takes 3 to 400 times more cycles than native situations. 
 
-![](../.gitbook/virtualization-steps.jpeg)
+![](../.gitbook/assets/virtualization-steps.jpeg)
 
 
 ## Para Virtualization 
