@@ -350,27 +350,103 @@ Generally, the Operating System operates in two modes
 
 ## VMWare- vSphere Product
 
-- It virtualizes and aggregates the underlying physical hardware resources of a datacenter
+- It _virtualizes and aggregates_ the underlying physical hardware resources of a datacenter
 - It promotes private cloud (or hybrid) rather than a public cloud concept !!! (DIFFERENT from AMAZON or similar clouds)
 - VMWare extended their previous virtualiation products such as VMWare ESX, workstation, and so forth. 
 - **vSphere is called as a cloud OS - aggregates the infrastructure of a datacenter** < IMPORTANT
 - vSphere is a Type-1 virtualization
 - It enables us to manage IT resources. 
 
+## VMWare Topology
+
+- **With this architecture, we can create a virtual datacenter**
+- **vCenter server** 
+	- Provides a central poing of control to the datacenter
+	- It is responseible for performance monitoring, management and configuration
+- **Server groups with computing servers**
+	- They run ESX or ESXi based x86 servers on bare metal. 
+	- These servers could be grouped as clusters too. 
+- **Storage networks/arrays**
+	- 3 types
+		- Fibre channel SAN 
+		- Internet Small Computer Storage Interface (iSCI)
+		- NAS
 
 
+## VMWare Topology 
+
+![](../.gitbook/assets/wmvare-topology.jpeg)
 
 
+- **Management clients**
+	- vSphere client
+	- vSphere CLI 
+	- vSphere Management Assistant (MA)
+
+## VMWare- Components 
+
+- Vmware ESX or ESXi server 
+	- A server with virtualization layer.
+	- It abstracts the underlying hardware for provisioning resources to VMs. 
+
+- A _Virtual Machine File System_ (VMFS) among ESXi servers. 
+	- High performance cluster filesystem - e.g Parallel FileSystem, HDFS 
+
+- vCenter Management Server 
+	- Centralized component for provisioning and managing VMs 
+
+- Virtual Infrastructure Clients 
+	-An interface for client connections 
+
+- Virtual Infrastructure web access
+	- An interface for users/admins to manage vms
+	- The configurations can happen at cluster level 
+
+![](../.gitbook/assets/vmware-components.jpeg)
 
 
+## Distributed Services 
+
+- VMware VMotion 
+- VMware Storage VMotion
+- VMware Dynamic Resource Scheduler
+- VMware High Availability
+- Fault Tolerance
 
 
+## VMWare vMotion
+
+![](../.gitbook/assets/vmware-motion.jpeg)
+
+- It enables the migration of virtual machines from one **host memory to another host memory** without service interruption (with no downtime) < **IMPORTANT !**
+	- But, the disk and the other files are stored in the shared memory. 
+
+- This allows administrators
+	- To off-load virtual machines from one storage array to another to perform maintenance
+	- To resolve out-of-space issues
+	- To upgrade VMFS
+
+## Storage vMotion (SVMotion)
+
+- Does the same as vMotion, but it moved storage information in addition to moving guests. 
+	- i.e snapshots could also be moved 
+
+- This enables datacenter level VM migration
+- Note: Vmotion cannot do a datacenter level VM migration
+
+![](../.gitbook/assets/vmware-vmotion.jpeg)
 
 
+## VMWare - Insights 
 
+- **Dynamic Resource Scheduler**
+	- It schedules the resources based on loads or capacity requirements 
+	- It has features to do automatic scheduling of cluster configurations. 
 
+- **Consolidated Backup**
+	- It is utilized for the backup of ESX servers. 
 
-
+![](../.gitbook/assets/vmware-insights.jpeg)
 
 
 
