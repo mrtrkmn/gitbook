@@ -18,6 +18,8 @@
   * [L4- IaaS - AWS](cloud-computing/L4-IaaS.md)
   * [L5- Application Elasticity](cloud-computing/l5-autoscaling.md)
   * [L6- Openstack](cloud-computing/l6-openstack.md)
+  * [L7- Cloud Monitoring](cloud-computing/cloud-monitoring.md)
+  * [L10- FaaS](cloud-computing/L10-FaaS.md)
 * [Requirements Engineering](requirements-engineering/README.md)
   * [L3 - RE Processes](requirements-engineering/lecture-3.md)
 * [Security Engineering](security-engineering/README.md)
