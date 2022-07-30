@@ -75,26 +75,26 @@ Finding a promising use case
 
 #### Advantages 
 
-    - Decentralized management (trust in one party -> trust in a system of multiple parties)
-    -  Transparency of all transactions
-    - Traceability of the complete transaction history
-    - Pseudonymity of the wallet owners
-    - Built-in financial incentives for early adopters and network growth 
+- Decentralized management (trust in one party -> trust in a system of multiple parties)
+-  Transparency of all transactions
+- Traceability of the complete transaction history
+- Pseudonymity of the wallet owners
+- Built-in financial incentives for early adopters and network growth 
 
 #### Opportunities 
 
-    - Innovation thrust for IT solutions in the global finance system 
-    - Lowered entry barries for IT-savvy players with limited financial resources
-    - Impetus to re-evaluate established business models and economic mechnanisms
+- Innovation thrust for IT solutions in the global finance system 
+- Lowered entry barries for IT-savvy players with limited financial resources
+- Impetus to re-evaluate established business models and economic mechnanisms
 
 
 
 ### Centralized Platforms
 
 #### Benefits
-    - Efficient
-    - Scalable
-    - Standardized components
+- Efficient
+- Scalable
+- Standardized components
 
 #### Drawbacks 
 - Requires **trust** in platform provider
