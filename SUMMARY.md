@@ -27,3 +27,6 @@
   * [Exercises](security-engineering/exercises/README.md)
     * [Obfuscation](security-engineering/exercises/l7-obfuscation.md)
     * [Security Principles](security-engineering/exercises/sec-eng-exers.md)
+
+* [Event Processing](event-processing/README.md)
+  * [Optimization Patterns for Distributed Event Processing Systems](event-processing/L3-Event-Processing-Optimizations.md)
