@@ -30,3 +30,4 @@
 
 * [Event Processing](event-processing/README.md)
   * [Optimization Patterns for Distributed Event Processing Systems](event-processing/L3-Event-Processing-Optimizations.md)
+  * [Fault Tolerance](event-processing/L4-fault-tolerant.md)
