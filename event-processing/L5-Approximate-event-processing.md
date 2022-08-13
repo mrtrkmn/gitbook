@@ -140,10 +140,10 @@ Constraint: Limited memory, cannot store the entire stream (or window)
 
 - Observed a number of elements with the following distinct 6-bit binary hashes
 
-001100
-010010
-101010
-110101
+* 001100
+* 010010
+* 101010
+* 110101
 
 - Bins: bin[0]=1, bin[1]=3, bin[2]= 1, bin[3]=2 (always:  "max leading 0s" + 1 )
 
