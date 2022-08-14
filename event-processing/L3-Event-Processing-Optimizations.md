@@ -1,5 +1,3 @@
-# L3-Optimization Patterns for Distributed Event Processing Systems 
-
 Refer following paper for more information
 > [HSS+14] Martin Hirzel, Robert Soulé, Scott Schneider, Buğra Gedik, and Robert Grimm. 2014. A catalog of stream processing optimizations. ACM Comput. Surv. 46, 4, Article 46 (March 2014), 34 pages. DOI: https://doi-org.eaccess.ub.tum.de/10.1145/2528412
 
