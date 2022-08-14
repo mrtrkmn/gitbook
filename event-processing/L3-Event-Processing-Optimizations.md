@@ -20,7 +20,7 @@ Refer following paper for more information
 
 ![](../.gitbook/assets/operators.png)
 
-- Sometimes, it matters where these operatirs are placed, sometimes not 
+- Sometimes, it matters where these operators are placed, sometimes not 
 
 **Important concepts**
 
@@ -47,7 +47,7 @@ Refer following paper for more information
 
 ## Stateful Operators 
 
-- A **stateful** operator processes incoming events wioth regard to a context
+- A **stateful** operator processes incoming events with regard to a context
     - Previous events (e.g in a window )
     - Internal state is maintained in the operator (e.g a counter, sum, partial pattern match, etc)
 
@@ -63,8 +63,8 @@ Refer following paper for more information
 
 ## Selectivity
 
-- Selectivity tells how many evens are in average emitted per ingested input event 
-- Example: Selevtivity 0.1 > Per 10 input events, the operator emits 1 output event 
+- Selectivity tells how many events are in average emitted per ingested input event 
+- Example: Selectivity 0.1 > Per 10 input events, the operator emits 1 output event 
 - This tells us about the **event rates**  to be expected in the operator graph. 
 
 ![](../.gitbook/assets/selectivity.png)
@@ -102,7 +102,7 @@ Refer following paper for more information
 
 ### Safety 
 
-Operator reordering between operators A and B is safe udnder the following conditions:
+Operator reordering between operators A and B is safe under the following conditions:
 
 1. **Attribute Availability**
     - Second operator B relies only on attributes of event that are already available before A 
