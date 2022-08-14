@@ -29,7 +29,7 @@
     * [Security Principles](security-engineering/exercises/sec-eng-exers.md)
 
 * [Event Processing](event-processing/README.md)
-  * [L1-2 Introduction Notes](event-processing/index.html)
+  * [L1-2 Introduction Notes](event-processing/L1-2-handwrittennotes.md)
   * [L3-Optimization Patterns for Distributed Event Processing Systems](event-processing/L3-Event-Processing-Optimizations.md)
   * [L4-Fault Tolerance](event-processing/L4-fault-tolerant.md)
   * [L5-Approximate Event Processing](event-processing/L5-Approximate-event-processing.md)
