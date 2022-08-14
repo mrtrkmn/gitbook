@@ -48,7 +48,7 @@
 
 ## Overview
 
-- What can we do to avoid inconsistencies in event detection whenn operators fail ?
+- What can we do to avoid inconsistencies in event detection when operators fail ?
 
 - Three general approaches: 
 
@@ -67,9 +67,9 @@
 5. A **output function** (input x state -> output)
 6. A distinguished state called **Start**
 
-(i). State machine begins at Start. 
-(ii). Each input received is passed through the transition and output function to produce a new state and an ouput
-(iii). The current state is held stable until a new input is received, while the output is communicated to a receiver. 
+--> (i). State machine begins at Start. 
+--> (ii). Each input received is passed through the transition and output function to produce a new state and an ouput
+--> (iii). The current state is held stable until a new input is received, while the output is communicated to a receiver. 
 
 
 **State Machine Replication**
