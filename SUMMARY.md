@@ -22,7 +22,7 @@
   * [L10- FaaS](cloud-computing/L10-FaaS.md)
 * [Requirements Engineering](requirements-engineering/README.md)
   * [L3 - RE Processes](requirements-engineering/lecture-3.md)
-  * [General Exercises Terms(requirements-engineering/lecture-ex-1.md)
+  * [General Exercises Terms](requirements-engineering/lecture-ex-1.md)
 * [Security Engineering](security-engineering/README.md)
   * [Obfuscation](security-engineering/l7-notes.md)
   * [Exercises](security-engineering/exercises/README.md)
