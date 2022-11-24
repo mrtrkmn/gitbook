@@ -29,3 +29,6 @@ This website contains lecture notes and information given at Technical Universit
     * [Software Based Integrity Protection](security-engineering/exercises/l9-software-based-integrity-protection.md)
     * [Hardware Based Integrity Protection](security-engineering/exercises/l10-hardware-integrity-protection.md)
     
+* [Network Security](network-security/README.md)
+  * [L1-intro](network-security/l1-intro.md)
+  * [L3- Network Middlewares/Firewall](network-security/l3-network-middlewares.md)
