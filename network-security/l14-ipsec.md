@@ -9,13 +9,13 @@
 On arrival of an IP packet there is no assurance of 
 
 1. Data origin authentication 
-    - The packet was actually sent by the entity referenced by the source address
+- The packet was actually sent by the entity referenced by the source address
 
 2. Data integrity
-    - The original packet content was not modified during transit
+- The original packet content was not modified during transit
 
 3. Confidentiality
-    - The packet content was not inspected by a third party during transit
+- The packet content was not inspected by a third party during transit
 
 
 **IPSec tries to address these issues**
@@ -25,21 +25,21 @@ On arrival of an IP packet there is no assurance of
 
 
 1. Data origin authentication 
-    - It is not possible to spoof source/destination addresses without the receiver being able to detect this
-    - It is not possible to replay a recorded IP packet without the receiver being able to detect this.
+- It is not possible to spoof source/destination addresses without the receiver being able to detect this
+- It is not possible to replay a recorded IP packet without the receiver being able to detect this.
 
 2. Connectionless Data Integrity 
-    - It is not possible to modify an IP datagram in transit, without the receiver being able to detect this. 
+- It is not possible to modify an IP datagram in transit, without the receiver being able to detect this. 
 
 3. Confidentiality
 
-    - It is not possible to eavesdrop on the content of IP datagrams 
-    - Limited traffic flow confidentiality 
+- It is not possible to eavesdrop on the content of IP datagrams 
+- Limited traffic flow confidentiality 
 
 4. Security Policies
 
-    - All involved nodes can determine the required protectino for a packet according to a local security policy 
-    - Intermediate nodes and the receiver will drop packets, that don't meet these requirements. 
+- All involved nodes can determine the required protectino for a packet according to a local security policy 
+- Intermediate nodes and the receiver will drop packets, that don't meet these requirements. 
 
 
 
@@ -49,12 +49,12 @@ On arrival of an IP packet there is no assurance of
 
 
 1. Authentication, key establishment and negotiation of crypto algorithms 
-    - Possible protocols: ISAKMP, Internet Key Exchange (IKE), IKEv2
+- Possible protocols: ISAKMP, Internet Key Exchange (IKE), IKEv2
 
 2. Set keys and cryptographic algorithms 
 3. Secure channel which provides 
-    - Data integrity via Authentication Header (AH) or Encapsulating Security Payload (ESP)
-    - Confidentiality using ESP
+- Data integrity via Authentication Header (AH) or Encapsulating Security Payload (ESP)
+- Confidentiality using ESP
 
 **Note: ESP can provide both data integrity and encryption while AH only provides data integrity**
 
@@ -63,21 +63,21 @@ On arrival of an IP packet there is no assurance of
 RFC4301 defines the following IPSec components:
 
 - Concepts: 
-    - Security Association (SA) and Security Association Database (SAD)
-    - Security Policy Database (SPD) and Security Policy
+- Security Association (SA) and Security Association Database (SAD)
+- Security Policy Database (SPD) and Security Policy
 
 - Fundamental Protocols 
-    - Authentication Header (AH)
-    - Encapsulating Security Payload (ESP)
+- Authentication Header (AH)
+- Encapsulating Security Payload (ESP)
 
 - Protocol Modes 
-    - Transport Mode
-    - Tunnel Mode
+- Transport Mode
+- Tunnel Mode
 
 - Key Management Protocols 
-    - Internet Security Association and Key Management Protocol (ISAKMP)
-    - Internet Key Exchange (IKE)
-    - IKEv2
+- Internet Security Association and Key Management Protocol (ISAKMP)
+- Internet Key Exchange (IKE)
+- IKEv2
 
 
 - Most RFCs updated in 2005 after several years of revision
@@ -104,10 +104,10 @@ RFC4301 defines the following IPSec components:
 
 - AH- and ESP-protected packets carry a sequence number 
 
-    - On setup of Security Association (SA) the sequence number is initialized to 0
-    - The sequence number is incremented by 1 for each packet sent
-    - The sequence number is 32-bit long and  a new session key is needed before a wrap-around occurs
-    - The receiver checks if the sequence number is contained in a window of acceptable numbers 
+- On setup of Security Association (SA) the sequence number is initialized to 0
+- The sequence number is incremented by 1 for each packet sent
+- The sequence number is 32-bit long and  a new session key is needed before a wrap-around occurs
+- The receiver checks if the sequence number is contained in a window of acceptable numbers 
 
 ![](../.gitbook/assets/replayprotectin.png)
 
@@ -117,29 +117,29 @@ Replay protection is a security mechanism used in IPSec (Internet Protocol Secur
 
 - **Transport Mode**
 
-    - Only usable between communication endpoints 
-    - Host to host (Both way)
-    - Host to Gateway (Both way)
+- Only usable between communication endpoints 
+- Host to host (Both way)
+- Host to Gateway (Both way)
 
-    - Adds a security header (+ trailer  if ESP is employed)
+- Adds a security header (+ trailer  if ESP is employed)
 
 ![](../.gitbook/assets/transport-mode.png)
 
 
-    - Used when the cryptographic endpoints are also the communication endpoints of the secured packets 
-    - Cryptographic endpoints: Entities that process IPSec headers
-    - Communication endpoints: Source and destination of an IP packet
+- Used when the cryptographic endpoints are also the communication endpoints of the secured packets 
+- Cryptographic endpoints: Entities that process IPSec headers
+- Communication endpoints: Source and destination of an IP packet
 
 ![](../.gitbook/assets/transport-mode-2.png)
 
-    - In most cases, communication endpoints are hosts 
-    - But not always the case (e.g Gateway being managed by SNMP)
+- In most cases, communication endpoints are hosts 
+- But not always the case (e.g Gateway being managed by SNMP)
 
 
 
 - **Tunnel Mode**
-    - Usable with arbitrary peers
-    - Encapsulates IP packets 
+- Usable with arbitrary peers
+- Encapsulates IP packets 
 
 ![](../.gitbook/assets/tunnel-mode.png)
 
@@ -166,14 +166,14 @@ In general, transport mode is used for end-to-end communication between two host
 A Traffic Selector is a set of properties used to characterize IP packets. Each TS may contain: 
 
 - IP Source address 
-    - Specific host, network prefix, address range or wildcard 
+- Specific host, network prefix, address range or wildcard 
 
 - IP destination address 
-    - Specific host, network prefix, address range or wildcard 
-    - In case of incoming tunneled packets the inner header is evaulated 
+- Specific host, network prefix, address range or wildcard 
+- In case of incoming tunneled packets the inner header is evaulated 
 
 - Name
-    - DNS name, X.500 name or other name types.
+- DNS name, X.500 name or other name types.
 
 
 **Traffic selectors are used to define Security policies !**
@@ -188,9 +188,9 @@ This includes:
 - Selectors that identify specific IP flows 
 - Required security attributes for each flow
 - Security services to be provided for each flow
-    - Security protocol (AH/ESP)
-    - Protocol Mode (Transport/Tunnel)
-    - Other parameters (e.g policy lifetime, port number)
+- Security protocol (AH/ESP)
+- Protocol Mode (Transport/Tunnel)
+- Other parameters (e.g policy lifetime, port number)
 - Actions (e.g Discard, Secure, Bypass)
 - IPSec protection can be specifid for specific applications (through port number)
 

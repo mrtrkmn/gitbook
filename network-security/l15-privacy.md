@@ -72,23 +72,23 @@ The General Data Protection Regulation (GDPR) is a regulation in EU law on data 
 
 - How to understand security ? 
 
-    - Using the protection goals of 
+  - Using the protection goals of 
 **confidentiality, integrity and availability.**
 - How to understand privacy ? 
 
-    - Using the protection goals of **unlinkability, transparency and intervenability.**
+  - Using the protection goals of **unlinkability, transparency and intervenability.**
 
 - How can secutiry and privacy goals be interrelated ?
     
-    - Using the triad of duals.
+  - Using the triad of duals.
         **confidentiality vs availability,integrity vs intervenability, unlinkability vs transparency.**
 - What does GDPR stands fo ? 
     
-    - General Data Protection Regulation
+  - General Data Protection Regulation
 
 - What is personal data ?
 
-    - Any information relating to an identified or identifiable natural person.
+  - Any information relating to an identified or identifiable natural person.
 
 - What is the difference between the data controller and data processor ? 
 
