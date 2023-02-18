@@ -35,3 +35,9 @@
   * [L4-Fault Tolerance](event-processing/L4-fault-tolerant.md)
   * [L5-Approximate Event Processing](event-processing/L5-Approximate-event-processing.md)
   * [L6-Incremental Processing](event-processing/L6-incremental-processing.md)
+
+* [Network Security](network-security/README.md)
+  * [L1-intro](network-security/l1-intro.md)
+  * [L3- Network Middlewares/Firewall](network-security/l3-network-middlewares.md)
+  * [L14- IPSec](network-security/l14-ipsec.md)
+  * [L15- Privacy](network-security/l15-privacy.md)
