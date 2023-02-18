@@ -1,6 +1,8 @@
 
 ## Attacks
 
+(Originally written in google docs:  [Google Docs Link](https://docs.google.com/document/d/11Z7e7iP-Vsr0iJ-i2DxmUouLBMaZyZf9RFGsalihHco/edit?usp=sharing) )
+
 - SYN Flood - With forged IP addresses, SYN packets sent, half open connections leads to unavailability to legitimate users
 
 - Protection to SYN Flood,
