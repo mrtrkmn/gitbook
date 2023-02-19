@@ -42,6 +42,7 @@
   * [L14- IPSec](network-security/l14-ipsec.md)
   * [L15- Privacy](network-security/l15-privacy.md)
   * [Attakcs](network-security/attacks.md)
+  * [Sketches](network-security/sketches/sketch.html)
 
 * [Advanced Computer Networking](./advanced-networking/README.md)
   * [Routing](./advanced-networking/Routing.md)
