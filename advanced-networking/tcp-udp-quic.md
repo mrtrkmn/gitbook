@@ -63,7 +63,7 @@ FIN → FIN/ACK → ACK
 
 → TCP Header
 
-  ![](../gitbook/assets/acn-notes-figures/image103.png)
+  ![](../.gitbook/assets/acn-notes-figures/image103.png)
 
 → Basic Operation
 
@@ -98,14 +98,14 @@ Sender:
 
 *   Average several recent measurements, not just current sampleRTT
 
-![](../gitbook/assets/acn-notes-figures/image1.png)
+![](../.gitbook/assets/acn-notes-figures/image1.png)
 
 *   Called: Exponential weighted moving average (EWMA)
 *   Influence of past sample decreases
 *   More weight on recent samples than on older samples
-*   Typical value ![](../gitbook/assets/acn-notes-figures/image2.png)
+*   Typical value ![](../.gitbook/assets/acn-notes-figures/image2.png)
 
-![](../gitbook/assets/acn-notes-figures/image46.png)
+![](../.gitbook/assets/acn-notes-figures/image46.png)
 
 → TCP Options
 
@@ -137,7 +137,7 @@ Sender:
 *   2B windows size field → at most about 65 kb receive buffer
 *   Scale the announced window by a factor (shift the window)
 
-→ FLOW CONTROL ![](../gitbook/assets/acn-notes-figures/image31.png)
+→ FLOW CONTROL ![](../.gitbook/assets/acn-notes-figures/image31.png)
 
 *   Receiver may be a resource limited device
 *   OS kernel buffers segments for applications to process
@@ -159,25 +159,25 @@ Sender:
 
 What we want is ⬇️
 
-![](../gitbook/assets/acn-notes-figures/image90.png)
+![](../.gitbook/assets/acn-notes-figures/image90.png)
 
 → Without controlling amount of outgoing data, capacity may drop dramatically because of congestion collapse
 
-→ Round Trip Propagation delay: ![](../gitbook/assets/acn-notes-figures/image3.png) being the delay of link i
+→ Round Trip Propagation delay: ![](../.gitbook/assets/acn-notes-figures/image3.png) being the delay of link i
 
-→ Bottleneck bandwidth: ![](../gitbook/assets/acn-notes-figures/image4.png)  being the bandwidth of link i
+→ Bottleneck bandwidth: ![](../.gitbook/assets/acn-notes-figures/image4.png)  being the bandwidth of link i
 
 → BtlneckBufSize: buffer size at the bottleneck link
 
 → Amount inflight: data which is sent but not acked.
 
-![](../gitbook/assets/acn-notes-figures/image86.png)
+![](../.gitbook/assets/acn-notes-figures/image86.png)
 
-![](../gitbook/assets/acn-notes-figures/image5.png)
+![](../.gitbook/assets/acn-notes-figures/image5.png)
 
-![](../gitbook/assets/acn-notes-figures/image6.png)
+![](../.gitbook/assets/acn-notes-figures/image6.png)
 
-![](../gitbook/assets/acn-notes-figures/image7.png)
+![](../.gitbook/assets/acn-notes-figures/image7.png)
 
 →  Congestion Control
 
@@ -196,9 +196,9 @@ What we want is ⬇️
 *   packet  loss leads to lower goodput (retransmission consume bandwidth)
 *   Unpredictable latency due to retransmissions
 
-![](../gitbook/assets/acn-notes-figures/image100.png)
+![](../.gitbook/assets/acn-notes-figures/image100.png)
 
-![](../gitbook/assets/acn-notes-figures/image69.png)
+![](../.gitbook/assets/acn-notes-figures/image69.png)
 
 → Is TCP fair ?
 
@@ -206,7 +206,7 @@ What we want is ⬇️
 *   Do all of them get an equal share of bandwidth ?
 *   Multiple different congestion control algorithms may be used !
 
-![](../gitbook/assets/acn-notes-figures/image15.png)
+![](../.gitbook/assets/acn-notes-figures/image15.png)
 
 → How does TCP regulate the sending rate ?
 
@@ -240,7 +240,7 @@ What we want is ⬇️
 *   Disadvantages: buffers kept full → high latency, performance drop on lossy links
 *   Examples: Reno, BIC, CUBIC
 
-![](../gitbook/assets/acn-notes-figures/image62.png)
+![](../.gitbook/assets/acn-notes-figures/image62.png)
 
 → TCP RENO
 
@@ -255,7 +255,7 @@ What we want is ⬇️
 *   Slow start: Exponential growth of congestion window
 *   Congestion Avoidance: Linear growth of congestion window
 
-![](../gitbook/assets/acn-notes-figures/image81.png)
+![](../.gitbook/assets/acn-notes-figures/image81.png)
 
 → TCP Reno Variables
 
@@ -301,14 +301,14 @@ effectively increase CWND by 1 MSS each RTT→ additive increase
 *   Maximum usable bandwidth is estimated
 *   That bandwidth should be used, and if nothing is lost, higher bandwidth is explored.
 
-![](../gitbook/assets/acn-notes-figures/image44.png)
+![](../.gitbook/assets/acn-notes-figures/image44.png)
 
 *   Congestion windows is not halved for every packet loss (B= 0.7)
 *   Congestion window growth is modeled after a cubic function with plateau W\_cubic
 *   Converges fast (concave growth) towards the bandwidth of the last packet loss W\_cubic
 *   If this is fine, higher bandwidth is explored (convex growth)
 
-![](../gitbook/assets/acn-notes-figures/image24.png)
+![](../.gitbook/assets/acn-notes-figures/image24.png)
 
 → TCP CUBIC ADVANTAGES
 
@@ -348,11 +348,11 @@ effectively increase CWND by 1 MSS each RTT→ additive increase
 *   If RTT decreases, not all available bandwidth may be used
 *   AIAD strategy: Additive Increase Additive Decrease
 
-![](../gitbook/assets/acn-notes-figures/image18.png)
+![](../.gitbook/assets/acn-notes-figures/image18.png)
 
 → DELAY BASED VS LOSS-BASED
 
-![](../gitbook/assets/acn-notes-figures/image66.png)
+![](../.gitbook/assets/acn-notes-figures/image66.png)
 
 → Why use delay-based algorithms at all ?
 
@@ -430,13 +430,13 @@ effectively increase CWND by 1 MSS each RTT→ additive increase
 *   Probe Bandwidth
 *   Probe Round-Trip Time
 
-![](../gitbook/assets/acn-notes-figures/image73.png)
+![](../.gitbook/assets/acn-notes-figures/image73.png)
 
-![](../gitbook/assets/acn-notes-figures/image38.png)
+![](../.gitbook/assets/acn-notes-figures/image38.png)
 
-![](../gitbook/assets/acn-notes-figures/image99.png)
+![](../.gitbook/assets/acn-notes-figures/image99.png)
 
-![](../gitbook/assets/acn-notes-figures/image49.png)
+![](../.gitbook/assets/acn-notes-figures/image49.png)
 
 → Strengths of BBR
 
@@ -446,9 +446,9 @@ effectively increase CWND by 1 MSS each RTT→ additive increase
 *   Close to the optimal operation point
 *   Does not starve when competing with other algorithms
 
-![](../gitbook/assets/acn-notes-figures/image71.png)
+![](../.gitbook/assets/acn-notes-figures/image71.png)
 
-→ Problems with BBR ![](../gitbook/assets/acn-notes-figures/image40.png)
+→ Problems with BBR ![](../.gitbook/assets/acn-notes-figures/image40.png)
 
 *   Numerous BBR flows fail to keep the buffer empty
 
@@ -476,9 +476,9 @@ effectively increase CWND by 1 MSS each RTT→ additive increase
 *   Better coexistence with Reno/CUBIC
 *   Leave space for new entering flows
 
-![](../gitbook/assets/acn-notes-figures/image74.png)
+![](../.gitbook/assets/acn-notes-figures/image74.png)
 
-![](../gitbook/assets/acn-notes-figures/image53.png)
+![](../.gitbook/assets/acn-notes-figures/image53.png)
 
 → UDP
 
@@ -499,7 +499,7 @@ effectively increase CWND by 1 MSS each RTT→ additive increase
 
 → UDP Header
 
-![](../gitbook/assets/acn-notes-figures/image29.png)
+![](../.gitbook/assets/acn-notes-figures/image29.png)
 
 *   Source Port: which application of the sending host sent the datagram
 *   Destination Port: which application of the receiving host should receive the datagram
@@ -608,7 +608,7 @@ effectively increase CWND by 1 MSS each RTT→ additive increase
 
         → Problem
 
-*   TCP does a 3-way handshake ![](../gitbook/assets/acn-notes-figures/image64.png)
+*   TCP does a 3-way handshake ![](../.gitbook/assets/acn-notes-figures/image64.png)
 *   TLS does at least 3-way handshake (or more …)
 *   Results in a lot of RTTs before data transmission
 *   Can in part be decreased using TCP Fast Open (but not widely deployed)
@@ -620,11 +620,11 @@ effectively increase CWND by 1 MSS each RTT→ additive increase
 *   Reuse old connections
 *   Client saves information about the server
 
-![](../gitbook/assets/acn-notes-figures/image47.png)
+![](../.gitbook/assets/acn-notes-figures/image47.png)
 
-![](../gitbook/assets/acn-notes-figures/image82.png)
+![](../.gitbook/assets/acn-notes-figures/image82.png)
 
-→ GET RID OF HEAD-OF-LINE BLOCKING ![](../gitbook/assets/acn-notes-figures/image52.png)
+→ GET RID OF HEAD-OF-LINE BLOCKING ![](../.gitbook/assets/acn-notes-figures/image52.png)
 
 *   If one TCP segment is lost in transit, everything after that has to wait for delivery until successful retransmission (in-order property)
 *   Frequent goal: multiplexing multiple data streams over one TCP connection
@@ -656,7 +656,7 @@ effectively increase CWND by 1 MSS each RTT→ additive increase
 *   The kernel is not involved in the protocol  itself
 *   Experiments with new protocol mechanisms are straightforward , as long as user-space is controlled by the application vendor
 
-![](../gitbook/assets/acn-notes-figures/image61.png)
+![](../.gitbook/assets/acn-notes-figures/image61.png)
 
 → MIDDLEBOX RESISTANCE
 
@@ -702,11 +702,11 @@ Solution:
 *   Enabling multipath and forward error correction extensions
 *   Providing always secure transport, using TLS 1.3 by default
 
-![](../gitbook/assets/acn-notes-figures/image54.png)
+![](../.gitbook/assets/acn-notes-figures/image54.png)
 
-![](../gitbook/assets/acn-notes-figures/image70.png)
+![](../.gitbook/assets/acn-notes-figures/image70.png)
 
-![](../gitbook/assets/acn-notes-figures/image14.png)
+![](../.gitbook/assets/acn-notes-figures/image14.png)
 
 → QUIC Packet:
 
@@ -721,7 +721,7 @@ Solution:
 
 → Packet number:
 
-*   Integer in the range 0 to ![](../gitbook/assets/acn-notes-figures/image8.png)
+*   Integer in the range 0 to ![](../.gitbook/assets/acn-notes-figures/image8.png)
 *   Used in determining the cryptographic nonce for packet protection
 *   Different packet number spaces for initial packets, handshake packets, and application packets
 *   Start at packet number 0 and must be increased by at least 1 for subsequent packets
@@ -739,7 +739,7 @@ Solution:
 → Variable Length Integer Encoding
 
 *   Ensures that smaller integer values need fewer bytes to encode
-*   The two most significant bits of the first byte encode the log\_2 of the integer encoding length in bytes ![](../gitbook/assets/acn-notes-figures/image60.png)
+*   The two most significant bits of the first byte encode the log\_2 of the integer encoding length in bytes ![](../.gitbook/assets/acn-notes-figures/image60.png)
 
 → QUIC Security
 
@@ -775,7 +775,7 @@ Solution:
 
 *   Number used once (nonce) N to prevent replay attacks, derived from the packet number
 
-![](../gitbook/assets/acn-notes-figures/image16.png)
+![](../.gitbook/assets/acn-notes-figures/image16.png)
 
 *   Encrypt:
 
@@ -806,7 +806,7 @@ Solution:
 *   E.g. max\_idle\_timeout, max\_udp\_payload\_size, initial\_max\_data, . . .
 *    Negotiating Connection IDs
 
-![](../gitbook/assets/acn-notes-figures/image59.png)
+![](../.gitbook/assets/acn-notes-figures/image59.png)
 
 → Version Negotiation
 
@@ -823,7 +823,7 @@ Solution:
 *   If the version is not supported by the server it replies with a Version Negotiation packet listing all supported versions (its own version field is set to 0x0000 0000)
 *   The client can pick a supported version.
 
-![](../gitbook/assets/acn-notes-figures/image78.png)
+![](../.gitbook/assets/acn-notes-figures/image78.png)
 
 → Streams and Acknowledgements
 
@@ -850,7 +850,7 @@ Solution:
 
 *   Spin bit introduces the possibility to passively measure the connection's RTT
 
-![](../gitbook/assets/acn-notes-figures/image17.png)
+![](../.gitbook/assets/acn-notes-figures/image17.png)
 
 → qlog and qvis
 

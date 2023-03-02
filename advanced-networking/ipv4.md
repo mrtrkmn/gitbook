@@ -38,15 +38,15 @@ IPv4
 
 → IPv4 Datagram
 
-![](../gitbook/assets/acn-notes-figures/image94.png)
+![](../.gitbook/assets/acn-notes-figures/image94.png)
 
 *   IHL : Internet Header Length
 *   TOS: Type of service
 *   TTL: Time to live
 
-![](../gitbook/assets/acn-notes-figures/image98.png)
+![](../.gitbook/assets/acn-notes-figures/image98.png)
 
-![](../gitbook/assets/acn-notes-figures/image102.png)
+![](../.gitbook/assets/acn-notes-figures/image102.png)
 
 → IPv4 addressing
 
@@ -63,12 +63,12 @@ IPv4
 *   Device interfaces with same subnet part of IP address
 *   Can physically reach each other without intervening router
 
-→ Splitting IP addresses ![](../gitbook/assets/acn-notes-figures/image77.png)
+→ Splitting IP addresses ![](../.gitbook/assets/acn-notes-figures/image77.png)
 
 *   Network part: Addressing the network
 *   Host part: Addressing the interface to host
 
-![](../gitbook/assets/acn-notes-figures/image10.png)
+![](../.gitbook/assets/acn-notes-figures/image10.png)
 
 → Classless IP addresses
 
@@ -81,7 +81,7 @@ IPv4
 *   How to calculate the network address for interface address 192.168.128.1 with a prefix length of 17 bits?
 
 *   CIDR notation : 192.168.128.1/17
-*   Dotted decimal notation: 192.168.128.1/255.255.128.0 ![](../gitbook/assets/acn-notes-figures/image19.png)
+*   Dotted decimal notation: 192.168.128.1/255.255.128.0 ![](../.gitbook/assets/acn-notes-figures/image19.png)
 
 → IPv4 address exhaustion
 
@@ -122,7 +122,7 @@ IPv4
 
 *   Some ICMP messages cause error notifications to be returned to user processes
 
-![](../gitbook/assets/acn-notes-figures/image51.png)
+![](../.gitbook/assets/acn-notes-figures/image51.png)
 
 Two classes of ICMP messages:
 
@@ -137,7 +137,7 @@ Two classes of ICMP messages:
 
 → ICMP Message Types
 
-![](../gitbook/assets/acn-notes-figures/image34.png)
+![](../.gitbook/assets/acn-notes-figures/image34.png)
 
 *   ICMP should contain as much data of the dropped message as possible up to a limit of 572 byte for the ICMP message.
 
@@ -147,7 +147,7 @@ Two classes of ICMP messages:
 
 *   Checks if host is reachable, alive
 *   Uses ICMP echo request/reply
-*   Copy packet data request reply ![](../gitbook/assets/acn-notes-figures/image56.png)
+*   Copy packet data request reply ![](../.gitbook/assets/acn-notes-figures/image56.png)
 
 → Traceroute
 
@@ -164,7 +164,7 @@ Two classes of ICMP messages:
 *   Packets from same TCP connection yield same hash value
 *   No reordering within one TCP connection
 
-![](../gitbook/assets/acn-notes-figures/image84.png)
+![](../.gitbook/assets/acn-notes-figures/image84.png)
 
 → PARIS TRACEROUTE
 
@@ -247,12 +247,12 @@ There are further interesting traceroute tools, e.g.:
 
 *   Reverse Address Resolution Protocol (rarely used)
 
-![](../gitbook/assets/acn-notes-figures/image95.png)
+![](../.gitbook/assets/acn-notes-figures/image95.png)
 
 *   Example send datagram from A to B via R (assuming A knows B's IP address)
 *   The router manages two ARP tables one for Net 1 and one for Net 2
 
-![](../gitbook/assets/acn-notes-figures/image88.png)
+![](../.gitbook/assets/acn-notes-figures/image88.png)
 
 *   A creates IP datagram with source IP addr. A, destination IP addr. B
 *   A uses ARP to get R's MAC address of R's interface 10.0.10.1
@@ -286,7 +286,7 @@ There are further interesting traceroute tools, e.g.:
 
 → ARP PACKET FORMAT
 
-![](../gitbook/assets/acn-notes-figures/image79.png)
+![](../.gitbook/assets/acn-notes-figures/image79.png)
 
 → ARP Details
 
@@ -322,7 +322,7 @@ There are further interesting traceroute tools, e.g.:
 *   Proxy ARP: Host or router responds to ARP Request that arrives from one of its connected networks for a host that is on another of its connected networks
 *   RFC 925: Multi-LAN Address Resolution
 
-![](../gitbook/assets/acn-notes-figures/image80.png)
+![](../.gitbook/assets/acn-notes-figures/image80.png)
 
 – Use cases:
 
@@ -419,7 +419,7 @@ There are further interesting traceroute tools, e.g.:
 *   Router may receive forwarding and/or routing information via SDN control plane
 *   Control plane might not necessarily be inside the router
 
-![](../gitbook/assets/acn-notes-figures/image28.png)
+![](../.gitbook/assets/acn-notes-figures/image28.png)
 
 → Routing functions include:
 
@@ -432,7 +432,7 @@ There are further interesting traceroute tools, e.g.:
 
 → IP forwarding is per-packet processing
 
-*   On high-end commercial routers, IP forwarding is distributed (Most work is done on the interface cards ) ![](../gitbook/assets/acn-notes-figures/image13.png)
+*   On high-end commercial routers, IP forwarding is distributed (Most work is done on the interface cards ) ![](../.gitbook/assets/acn-notes-figures/image13.png)
 
 → Two key router functions
 

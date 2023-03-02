@@ -3,7 +3,7 @@ Protocol Mechanisms
 
 → Forwarding/routing vs. network coding
 
-![](../gitbook/assets/acn-notes-figures/image83.png)
+![](../.gitbook/assets/acn-notes-figures/image83.png)
 
 → Network coding
 
@@ -105,11 +105,11 @@ Protocol Mechanisms
 
 → ETHERNET FRAME
 
-![](../gitbook/assets/acn-notes-figures/image50.png)
+![](../.gitbook/assets/acn-notes-figures/image50.png)
 
 → IPv4 Datagram
 
-![](../gitbook/assets/acn-notes-figures/image91.png)
+![](../.gitbook/assets/acn-notes-figures/image91.png)
 
 *   32 bit IPv4 address
 
@@ -135,7 +135,7 @@ Protocol Mechanisms
 *   Active switch in center
 *   Each "spoke"  runs a (separate) Ethernet protocol, therefore a defect wire disconnects only one host
 
-![](../gitbook/assets/acn-notes-figures/image22.png)
+![](../.gitbook/assets/acn-notes-figures/image22.png)
 
 → RJ45-Based Ethernet
 
@@ -211,7 +211,7 @@ Protocol Mechanisms
 *   Physical addresses: identify specific MAC adapters
 *   Logical addresses: identify logical group of MAC destinations
 
-![](../gitbook/assets/acn-notes-figures/image63.png)
+![](../.gitbook/assets/acn-notes-figures/image63.png)
 
 *   LAN broadcast address: FF-FF-FF-FF-FF-FF
 *   Transmission of multicast frames
@@ -265,7 +265,7 @@ Layer 2
 
 → SPANNING TREE PROTOCOL
 
-![](../gitbook/assets/acn-notes-figures/image9.png)
+![](../.gitbook/assets/acn-notes-figures/image9.png)
 
 *   Bridges gossip among themselves
 *   Compute loop-free subset
@@ -300,10 +300,10 @@ Layer 2
 
 → Least cost path becomes the root port.
 
-![](../gitbook/assets/acn-notes-figures/image92.png)
+![](../.gitbook/assets/acn-notes-figures/image92.png)
 
-![](../gitbook/assets/acn-notes-figures/image11.png)
+![](../.gitbook/assets/acn-notes-figures/image11.png)
 
 → RESULT
 
-![](../gitbook/assets/acn-notes-figures/image42.png)
+![](../.gitbook/assets/acn-notes-figures/image42.png)
