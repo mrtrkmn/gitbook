@@ -45,4 +45,12 @@
   * [Sketches](network-security/sketches/netsec.md)
 
 * [Advanced Computer Networking](./advanced-networking/README.md)
+  * [Internet Structure Analysis](./advanced-networking/internet-structure-analysis.md)
+  * [Protocol Mechanism](./advanced-networking/protocol-mechanism.md)
+  * [TCP-UDP-QUIC](./advanced-networking/tcp-udp-quic.md)
+  * [IPv4](./advanced-networking/ipv4.md)
+  * [IPv6](./advanced-networking/ipv6.md)
   * [Routing](./advanced-networking/Routing.md)
+  * [Routing and Forwarding](./advanced-networking/routing-and-forwarding.md)
+  * [Internet Wide Measurements](./advanced-networking/internet-wide-measurements.md)
+
