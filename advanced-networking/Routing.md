@@ -41,7 +41,7 @@
 - The FIB is computed from the RIB
 - The FIB is used to forward packets
 
-![](../.gitbook/assets/routuing.png)
+![](../../gitbook/assets/routuing.png)
 
 
 ### Inter-AS and intra-AS routing
@@ -72,7 +72,7 @@
     - Used to exchange routing information between ASes
     - Uses the AS number of the neighbor as the routing domain
 
-![](../.gitbook/assets/bgp.png)
+![](../../gitbook/assets/bgp.png)
 
 ISP B has a more specific route to Organization 1. 
 
@@ -138,7 +138,7 @@ Routing: Prefer routes that incur financial gain:
 
 - Stub ASes have exactly one BGP relationship (with their provider)
 
-![](../.gitbook/assets/stubas.png)
+![](../../gitbook/assets/stubas.png)
 
 * Rules:
     - Provider AS announces routes for reaching the whole internet to customer AS 
@@ -151,7 +151,7 @@ In the given figure C is losing money A is earning.
 
 - Multi-homes ASes have multiple providers 
 
-![](../.gitbook/assets/multihomed.png)
+![](../../gitbook/assets/multihomed.png)
 
 * Rules
 
@@ -188,7 +188,7 @@ A tells C routes to all reachable prefixes.
 
 - The more traffic comes from C, the more money A makes
 
-![](../.gitbook/assets/routing-ex-1.png)
+![](../../gitbook/assets/routing-ex-1.png)
 
 
 **Business Routing Example 2**
@@ -199,7 +199,7 @@ A and B tell C routes to all reachable prefixes.
 - The more traffic flows from C to B, the more money B makes
 - C will pick the one with the cheaper offer/ better quality
 
-![](../.gitbook/assets/routing-ex-2.png)
+![](../../gitbook/assets/routing-ex-2.png)
 
 **Business Routing Example 3**
 
@@ -213,7 +213,7 @@ C does not tell B routes learned from/via A
  - C does not want to pay for traffic <- A <- C <- B <- ...
 
 
-![](../.gitbook/assets/routing-ex-2.png)
+![](../../gitbook/assets/routing-ex-2.png)
 
 
 **Business Routing Example 4**
@@ -223,7 +223,7 @@ What should A announce here
 - C tells A about its own prefixes
 - A tells D about its route to C's prefixes: pays money to D, but gains money from C
 
-![](../.gitbook/assets/routing-ex-3.png)
+![](../../gitbook/assets/routing-ex-3.png)
 
 **Business Routing Example 5**
 
@@ -232,7 +232,7 @@ What should A announce to E
 - A tells peering partner E about its own prefixes and route to C's prefixes
 - no cost on link to E, but gains money from C
 
-![](../.gitbook/assets/routing-ex-4.png)
+![](../../gitbook/assets/routing-ex-4.png)
 
 
 **Business Routing Example 6**
@@ -243,7 +243,7 @@ Which rouite to prefix p does C receive, which should C select?
 - F tells C about route to prefix p (no cost involved)
 - C prefers route via F
 
-![](../.gitbook/assets/routing-ex-5.png)
+![](../../gitbook/assets/routing-ex-5.png)
 
 
 **Business Routing Example 7**
@@ -255,7 +255,7 @@ Which route to prefix p does C receive, which should C select?
 - G tells C about route to prefix p (C gains money)
 - C prefers route via G
 
-![](../.gitbook/assets/routing-ex-6.png)
+![](../../gitbook/assets/routing-ex-6.png)
 
 
 **Business Routing Example 8**
@@ -269,7 +269,7 @@ What shold C announce here ?
 - C does not announce to F: routes to prefixes it learned from H
     - Same reason as above
 
-![](../.gitbook/assets/routing-ex-7.png)
+![](../../gitbook/assets/routing-ex-7.png)
 
 ### Valley Free Routing
 
@@ -279,7 +279,7 @@ What shold C announce here ?
 2. then possibly one peering link
 3. the downstream: sequence of Provider -> Customer links (possibly length = 0 )
 
-![](../.gitbook/assets/routing-valley.png)
+![](../../gitbook/assets/routing-valley.png)
 
 
 
@@ -368,7 +368,7 @@ Providers can be categorized into Tiers
 
 ### k-Core Algorithm
 
-![](../.gitbook/assets/routing-k-core.png)
+![](../../gitbook/assets/routing-k-core.png)
 
 
 The k-core algorithm is a graph theory algorithm used for finding and analyzing the structure of complex networks. It is used to identify dense subgraphs or subnetworks within a larger network that are more tightly connected than other parts of the network.

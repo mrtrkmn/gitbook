@@ -49,9 +49,9 @@ IPv6
 
 *   2001:db8:85a3: 0:0 :8a2e:370:7334 → 2001:db8:85a3::8a2e:370:7334
 *   The localhost (loopback) address 0:0:0:0:0:0:0:1 is written as ::1
-*   Representations are shortened as much as possible. The longest sequence of consecutive all-zero fields is replaced by a double-colon. ![](.gitbook/assets/acn-notes-figures/image20.png)
+*   Representations are shortened as much as possible. The longest sequence of consecutive all-zero fields is replaced by a double-colon. ![](../gitbook/assets/acn-notes-figures/image20.png)
 
-![](.gitbook/assets/acn-notes-figures/image12.png)
+![](../gitbook/assets/acn-notes-figures/image12.png)
 
 → The IPv4 CIDR notation is also used for IPv6
 
@@ -124,11 +124,11 @@ IPv6
 
 → Reminder from IPv4
 
-![](.gitbook/assets/acn-notes-figures/image45.png)
+![](../gitbook/assets/acn-notes-figures/image45.png)
 
-![](.gitbook/assets/acn-notes-figures/image87.png)
+![](../gitbook/assets/acn-notes-figures/image87.png)
 
-![](.gitbook/assets/acn-notes-figures/image104.png)
+![](../gitbook/assets/acn-notes-figures/image104.png)
 
 → IPv6 Flow Label
 
@@ -142,9 +142,9 @@ IPv6
 
 → Extensions
 
-![](.gitbook/assets/acn-notes-figures/image89.png)
+![](../gitbook/assets/acn-notes-figures/image89.png)
 
-![](.gitbook/assets/acn-notes-figures/image76.png)
+![](../gitbook/assets/acn-notes-figures/image76.png)
 
 → Hop-by-hop Options header
 
@@ -168,7 +168,7 @@ IPv6
 
 → ⬇️ Fragmentation extension
 
-![](.gitbook/assets/acn-notes-figures/image96.png)
+![](../gitbook/assets/acn-notes-figures/image96.png)
 
 → Authentication header(IPSEC)
 
@@ -246,9 +246,9 @@ Note that this method only works for the lower 24 bits of the last block of an I
 *   Answer a Neighbor Solicitation
 *   Use MAC and IPv6 addresses of the destination host
 
-![](.gitbook/assets/acn-notes-figures/image93.png)
+![](../gitbook/assets/acn-notes-figures/image93.png)
 
-![](.gitbook/assets/acn-notes-figures/image26.png)
+![](../gitbook/assets/acn-notes-figures/image26.png)
 
 Router Solicitation (RS)
 
@@ -284,7 +284,7 @@ Stateless auto-configuration / Serverless
 
 • Automatic configuration of link-local addresses on system startup
 
-![](.gitbook/assets/acn-notes-figures/image101.png)
+![](../gitbook/assets/acn-notes-figures/image101.png)
 
 Use case
 
@@ -405,7 +405,7 @@ Three transition strategies have been devised by IETF:
 *   Address IPv4 packets to 192.88.99.1 (IPv4 Anycast)
 *   Deploy dual stack 6to4 relays and 6to4 routers as NAT router.
 
-![](.gitbook/assets/acn-notes-figures/image72.png)
+![](../gitbook/assets/acn-notes-figures/image72.png)
 
 → Header translation
 
@@ -418,7 +418,7 @@ Three transition strategies have been devised by IETF:
 
 *   The privacy extension prevents tracking of clients by randomization of the interface ID
 
-![](.gitbook/assets/acn-notes-figures/image68.png)
+![](../gitbook/assets/acn-notes-figures/image68.png)
 
 *   In general, most end devices implement the privacy extension
 
@@ -438,7 +438,7 @@ Three transition strategies have been devised by IETF:
 *   But behavioral analysis of providers and CPE’s using EUI-64 can be used to track prefixes \[9\]
 *   While clients can not be tracked, CPEs using EUI-64 identifiers can be actively found.
 
-![](.gitbook/assets/acn-notes-figures/image43.png)
+![](../gitbook/assets/acn-notes-figures/image43.png)
 
 *   In theory, testing all targets in a /48 is infeasible
 *   How can we reduce the search space and effectively track EUI-64 identifier?
@@ -447,7 +447,7 @@ Three transition strategies have been devised by IETF:
 *   Providers often use only parts of their owned prefixes
 *   Prefixes are often assigned at nibbles (e.g., /56, /60, /64)
 
-![](.gitbook/assets/acn-notes-figures/image58.png)
+![](../gitbook/assets/acn-notes-figures/image58.png)
 
 Excursion Waste Bits
 
