@@ -144,6 +144,3 @@ Extract a possibly problematic solution constraint from the following statements
 
 - **Problematic solution constraint:** why always query ? (it can create overheads )
 - **Reformulation:** The text entries use the correct character set
-
-
-

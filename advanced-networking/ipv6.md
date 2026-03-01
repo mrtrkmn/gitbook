@@ -1,5 +1,4 @@
-IPv6
-====
+# IPv6
 
 → Problems with IPv4
 
@@ -91,7 +90,7 @@ IPv6
 
 *   Developed at the beginning of IPv6, but dropped since then
 
-→ \*\* MULTICAST ADDRESSES
+→ **MULTICAST ADDRESSES**
 
 *   First 8 bits set to 11111111
 *   Next 4 bits as flag (permanent or transient address)

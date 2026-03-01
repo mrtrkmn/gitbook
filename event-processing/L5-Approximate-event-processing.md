@@ -101,7 +101,7 @@ Constraint: Limited memory, cannot store the entire stream (or window)
 
 - E.g 2 leading 0s -> must have spoken to 100s of people
 
-### HyporLogLog Algorithm
+### HyperLogLog Algorithm
 
 **Use the patterns of bits that occur at the beginning of the binary value of each element of the stream**
 

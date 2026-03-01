@@ -399,6 +399,3 @@ for new highend Intel processors
 - Flexible instance types
 - Large variety of Amazon Machine Instances
 - Pricing: On-Demand, reserved, spot market pricing
-
-
-

@@ -3,9 +3,9 @@
 Definition: "Any intermediary box, performing functions apart from standard functions of an IP router on the data path between a source host and destination host"
 
 
-**Firewalls (FW) Firewalls (FW)**
+**Firewalls (FW)**
     • Filter traffic based on a set of rules defined by a network administrator
-**Intrusion Detection Systems (IDS) Intrusion Detection Systems (IDS)**
+**Intrusion Detection Systems (IDS)**
     • Monitor traffic and collect data for (offline) analysis for security anomalies
     • Capable of more complex inspection that Firewalls
 **Network Address Translators (NAT)**

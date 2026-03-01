@@ -1,5 +1,4 @@
-Internet wide measurements
-==========================
+# Internet Wide Measurements
 
 →   Why do we measure the network?
 
@@ -158,7 +157,7 @@ Separate send and receive threads using RAW sockets
 *   No locking needed
 *   ZMap send and receive behavior:
 
-![](../gitbook/assets/acn-notes-figures/image36.png)
+![](../.gitbook/assets/acn-notes-figures/image36.png)
 
 Separate probe and output modules
 
@@ -256,7 +255,7 @@ Umbrella
 
 → No focus towards web traffic
 
-![](../gitbook/assets/acn-notes-figures/image57.png)
+![](../.gitbook/assets/acn-notes-figures/image57.png)
 
 Treat Top Lists carefully:
 
@@ -273,9 +272,9 @@ Treat Top Lists carefully:
 
 *   Size is not always 1 million
 
-![](../gitbook/assets/acn-notes-figures/image85.png)
+![](../.gitbook/assets/acn-notes-figures/image85.png)
 
-![](../gitbook/assets/acn-notes-figures/image27.png)
+![](../.gitbook/assets/acn-notes-figures/image27.png)
 
 Can we rank prefixes not domains?
 
@@ -432,7 +431,7 @@ Reverse DNS:
     • 1080::8:800:200c:417a  
     • a.7.1.4.c.0.0.2.0.0.8.0.8.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.0.1.ip6.arpa.
 
-![](../gitbook/assets/acn-notes-figures/image41.png)
+![](../.gitbook/assets/acn-notes-figures/image41.png)
 
 Idea
 
@@ -453,9 +452,9 @@ Requirement - NXDomain
 *   Descend into subtree
 *   Descend until full address is reached
 
-![](../gitbook/assets/acn-notes-figures/image35.png)
+![](../.gitbook/assets/acn-notes-figures/image35.png)
 
- ![](../gitbook/assets/acn-notes-figures/image21.png)![](../gitbook/assets/acn-notes-figures/image37.png) ![](../gitbook/assets/acn-notes-figures/image55.png) ![](../gitbook/assets/acn-notes-figures/image33.png)
+ ![](../.gitbook/assets/acn-notes-figures/image21.png)![](../.gitbook/assets/acn-notes-figures/image37.png) ![](../.gitbook/assets/acn-notes-figures/image55.png) ![](../.gitbook/assets/acn-notes-figures/image33.png)
 
 Full IPv6 scan:
 
@@ -479,7 +478,7 @@ Results :
 
 *    Yahoo
 
-![](../gitbook/assets/acn-notes-figures/image65.png)
+![](../.gitbook/assets/acn-notes-figures/image65.png)
 
 Result distribution:
 
@@ -514,7 +513,7 @@ Learn addresses from schemes in existing datasets
 
 Evaluate Interface ID (IID) portion of IPv6 addresses to determine device type
 
-![](../gitbook/assets/acn-notes-figures/image75.png)
+![](../.gitbook/assets/acn-notes-figures/image75.png)
 
 *   Traceroute source (scamper) contains routers
 *   Router IP addresses are assigned mostly manually
@@ -522,7 +521,7 @@ Evaluate Interface ID (IID) portion of IPv6 addresses to determine device type
 
 Evaluate Interface ID (IID) portion of IPv6 addresses to determine device type
 
-![](../gitbook/assets/acn-notes-figures/image48.png)
+![](../.gitbook/assets/acn-notes-figures/image48.png)
 
 *   IXP source contains many client devices
 *   Clients make extensive use of IPv6 Privacy Extensions
@@ -532,7 +531,7 @@ Evaluate Interface ID (IID) portion of IPv6 addresses to determine device type
 
 Hitlists can have a bias not only towards device types but also autonomous systems.
 
-![](../gitbook/assets/acn-notes-figures/image32.png)
+![](../.gitbook/assets/acn-notes-figures/image32.png)
 
 → Aliased Prefixes
 
@@ -540,7 +539,7 @@ Problem:
 
 *   Alias: another address of the same host
 *   Aliased prefix: whole prefix bound to the same host
-*   Bias: some hosts over-represented due to aliased prefixes ![](../gitbook/assets/acn-notes-figures/image30.png)
+*   Bias: some hosts over-represented due to aliased prefixes ![](../.gitbook/assets/acn-notes-figures/image30.png)
 
 Results:
 
@@ -549,7 +548,7 @@ Results:
 *   Validated using fingerprinting (initial TTL, TCP options, timestamps)
 *   Aliased prefix detection is crucial to reduce bias
 
-![](../gitbook/assets/acn-notes-figures/image23.png)
+![](../.gitbook/assets/acn-notes-figures/image23.png)
 
 → HITLISTS BIASES
 
@@ -571,7 +570,7 @@ However, many of these are not necessarily aliased but fully responsive \[17\]:
 
 → Including addresses from fully responsive prefixes should be considered in research relying on IPv6 hitlists.
 
-![](../gitbook/assets/acn-notes-figures/image39.png)
+![](../.gitbook/assets/acn-notes-figures/image39.png)
 
 → FILTER
 
@@ -665,9 +664,9 @@ To analyze who is involved in the deployment of QUIC, we analyzed originating AS
 
 *   Deployments are dominated by large providers
 *   ZMap results in addresses located in more than 4.7 k ASes
-*   HTTPS DNS Resource Records are strongly biased towards Cloudflare ![](../gitbook/assets/acn-notes-figures/image97.png)
+*   HTTPS DNS Resource Records are strongly biased towards Cloudflare ![](../.gitbook/assets/acn-notes-figures/image97.png)
 
-Which QUIC versions are deployed? ![](../gitbook/assets/acn-notes-figures/image25.png)
+Which QUIC versions are deployed? ![](../.gitbook/assets/acn-notes-figures/image25.png)
 
 We regularly scanned with ZMap between February and May 2021:
 
@@ -714,7 +713,7 @@ Servers share a set of QUIC Transport Parameters during the handshake:
 
          →   The QScanner extracts server values
 
-         →  Can we identify different QUIC deployments based on configurations? ![](../gitbook/assets/acn-notes-figures/image67.png)
+         →  Can we identify different QUIC deployments based on configurations? ![](../.gitbook/assets/acn-notes-figures/image67.png)
 
 Transport parameters differ within order of magnitudes
 

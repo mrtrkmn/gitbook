@@ -273,7 +273,7 @@ A central server can collect all partial states to create the full global snapsh
 
 - These involve different tradeoffs (runtime overheads, recovery time, etc.)
 
-## Chart-Lamport Examples 
+## Chandy-Lamport Examples 
 
 ### Example 1 
 

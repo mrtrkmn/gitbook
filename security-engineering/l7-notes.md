@@ -195,7 +195,7 @@ E.g. add an opaquely true predicate (PT ) to a while loop condition (P)
 3. Generate emulator to interpret L bytecode on x86 machine
 **Output:** Obfuscated program (P') consists of bytecode program and emulator
 
-![](../.gitbook/assets/virtual_obfspng)
+![](../.gitbook/assets/virtual_obfs.png)
 
 ### Example 
 

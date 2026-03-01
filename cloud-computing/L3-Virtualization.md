@@ -41,7 +41,7 @@ Generally, the Operating System operates in two modes
 - OS manages processes and threads. 
 
 
-# System Calls and CPUs 
+## System Calls and CPUs 
 
  - OS does:
 	- Process management (start, run, stop processes)
@@ -57,7 +57,7 @@ Generally, the Operating System operates in two modes
 - Typically a system call takes around 242 cycles.
 
 
-# Bare-Metal Virtualization 
+## Bare-Metal Virtualization 
 
 - As multiple OSs should function in a single machine here: 
 	- hypervisor acts at Ring 0. 
@@ -68,7 +68,7 @@ Generally, the Operating System operates in two modes
 
 
 
-# Hosted Virtualization 
+## Hosted Virtualization 
 
 - Here, the hypervisor is loaded on top of an OS. 
 - Similar to a computer application/program
@@ -78,7 +78,7 @@ Generally, the Operating System operates in two modes
 - Eg. VMware workstation, VMware fusion, Oracle Virtualbox, Parallels, Solaris-Zones
 
 
-# Full Virtualization 
+## Full Virtualization 
 
 - Here, the guest OS is not modified.
 - Guest OS works in Ring 1: VMM works in Ring 0 
@@ -253,7 +253,7 @@ Generally, the Operating System operates in two modes
 
 ## Impact on Exceeding Hard Limit 
 
-- **While exceeding the hard limit **
+- **While exceeding the hard limit**
 	- The kernel triggers OOM killer (Out-of-memory) process to kill any running processes (based on badness score)
 	- Hence, it is advisable to run **only one application** on a container. 
 
@@ -396,7 +396,7 @@ Generally, the Operating System operates in two modes
 	- Centralized component for provisioning and managing VMs 
 
 - Virtual Infrastructure Clients 
-	-An interface for client connections 
+	- An interface for client connections 
 
 - Virtual Infrastructure web access
 	- An interface for users/admins to manage vms
@@ -447,21 +447,3 @@ Generally, the Operating System operates in two modes
 	- It is utilized for the backup of ESX servers. 
 
 ![](../.gitbook/assets/vmware-insights.jpeg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

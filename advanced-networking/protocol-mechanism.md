@@ -1,5 +1,4 @@
-Protocol Mechanisms
-===================
+# Protocol Mechanisms
 
 → Forwarding/routing vs. network coding
 

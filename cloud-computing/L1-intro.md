@@ -62,7 +62,7 @@
 |-----------------------|-------------------------------|-----------------------------------------|--------------------------------------------|---|
 | **Your Servers**      | _Amazon WS OpenStack Alibaba_ | _Microsoft Azure Google App Engine AWS_ | _Salesforce.com Google Apps Microsoft 365_ |   |
 | **Data**              | **Data**                      | **Data**                                | **Data**                                   |   |
-| **Application Logic** | **Application LOgic**         | **Application Logic**                   | _Application Logic_                        |   |
+| **Application Logic** | **Application Logic**         | **Application Logic**                   | _Application Logic_                        |   |
 | **Devel./Runtime**    | **Devel./Runtime**            | _Devel./Runtime_                        | _Devel./Runtime_                           |   |
 | **Infrastructure**    | _Infrastructure_              | _Infrastructure_                        | _Infrastructure_                           |   |
 
@@ -125,24 +125,21 @@
   - Google
   - Dropbox
   
-  ## Deployment Models
-  
-  - Public Cloud
-    - IT resources are provisioned over the Internet via Web applications or services from an off-site third-party provider
-  
-  - Community Cloud
-    - Shared by a group of organizations
-  
-  - Private Cloud
-    - IT services are offered via private networks for the exclusive use of one client, providing full control over data,security and quality of service
-      e.g built and managed by a company's own IT organization
-      
-  - Hybrid Cloud
-   
-  
-  
-  
-  
+## Deployment Models
+
+- Public Cloud
+  - IT resources are provisioned over the Internet via Web applications or services from an off-site third-party provider
+
+- Community Cloud
+  - Shared by a group of organizations
+
+- Private Cloud
+  - IT services are offered via private networks for the exclusive use of one client, providing full control over data, security and quality of service
+    e.g built and managed by a company's own IT organization
+
+- Hybrid Cloud
+
+
 ## Essential Characteristics of Cloud Computing 
 
 - On-demand self-service
@@ -243,7 +240,7 @@
     
 
 
-# WEEK II - Cloud Computing
+## WEEK II - Cloud Computing
 
 
 

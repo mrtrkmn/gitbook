@@ -258,6 +258,3 @@
 - **Metric name and labels define a time series** 
     - e.g *api_http_requests_total{method="POST", handler="/messages"}*
     - samples are a float64 value plus a millisecond timestamp
-
-
-
