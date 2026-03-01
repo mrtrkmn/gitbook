@@ -1,8 +1,8 @@
-# Ethereum Smart Contract - Recap
+# Ethereum Smart Contracts - Recap
 
 - Solidity is a high level language to write smart contracts for Ethereum 
 - Contracts can be defined as encapsulated units, similar to classes in traditional object-oriented programming languages like Java 
-- A contract has its own, persistant state on the blockchain which is defined by state variabnles in the contract.
+- A contract has its own, persistent state on the blockchain which is defined by state variables in the contract.
 - Functions are used to change the state of the contract or to perform other computations. 
 - Solidity is compiled to bytecode which is persistent and immutable once deployed to blockchain
     - **No patch deployment** possible 
