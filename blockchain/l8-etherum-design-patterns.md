@@ -1,4 +1,4 @@
-# Recap Ethereum Design Patterns 
+# Ethereum Design Patterns
 
 ## Solidity Idioms 
 

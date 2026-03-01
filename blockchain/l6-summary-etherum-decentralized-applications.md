@@ -1,2 +1,2 @@
-# L6 Summary: Etherum- Decentralized Applications
+# L6 Summary - Ethereum Decentralized Applications
 

@@ -1,34 +1,11 @@
-# ToC
+# Lecture Notes
 
 This website contains lecture notes and information given at Technical University of Munich.
 
 * [Blockchain](blockchain/README.md)
-  * [L1- Intro](blockchain/l1-intro.md)
-  * [L2- Cryptographic Hash Functions](blockchain/l2-crypto.md)
-  * [L3- Bitcoin Basics Recap](blockchain/l3-bitcoin-blockchain.md)
-  * [L4- Consensus in Bitcoin](blockchain/l4-consensus.md)
-  * [L5- Evolution of the Bitcoin Network](blockchain/l5-evolution-of-bitcoin.md)
-  * [L6- Ethereum Basics](blockchain/l6-ethereum-basics.md)
-  * [L6 Summary: Etherum- Decentralized Applications](blockchain/l6-summary-ethereum.md)
-  * [Exercises](blockchain/exercises/README.md)
-    * [L3- Bitcoin Basics](blockchain/exercises/l3-bitcoin-basics.md)
-    * [L4- Consensus](blockchain/exercises/l4-consensus.md)
 * [Cloud Computing](cloud-computing/README.md)
-  * [L1-intro](cloud-computing/L1-intro.md)
-  * [L3- Virtualization](cloud-computing/L3-Virtualization.md)
-  * [L4- IaaS - AWS](cloud-computing/L4-IaaS.md)
-  * [L5- Application Elasticity](cloud-computing/l5-autoscaling.md)
-  * [L6- Openstack](cloud-computing/l6-openstack.md)
 * [Requirements Engineering](requirements-engineering/README.md)
-  * [L3 - RE Processes](requirements-engineering/lecture-3.md)
 * [Security Engineering](security-engineering/README.md)
-  * [Obfuscation](security-engineering/l7-notes.md)
-  * [Exercises](security-engineering/exercises/README.md)
-    * [Obfuscation](security-engineering/exercises/l7-obfuscation.md)
-    * [Security Principles](security-engineering/exercises/sec-eng-exers.md)
-    * [Software Based Integrity Protection](security-engineering/exercises/l9-software-based-integrity-protection.md)
-    * [Hardware Based Integrity Protection](security-engineering/exercises/l10-hardware-integrity-protection.md)
-    
+* [Event Processing](event-processing/README.md)
 * [Network Security](network-security/README.md)
-  * [L1-intro](network-security/l1-intro.md)
-  * [L3- Network Middlewares/Firewall](network-security/l3-network-middlewares.md)
+* [Advanced Computer Networking](advanced-networking/README.md)
