@@ -398,7 +398,3 @@ Native Cloud Applications are scalable; capacity can grow to very large workflow
 - **Gateway Load Balancer (VPC only, Transport and Network Layer)**
     - Forwards ingress traffic to network appliances, like intrusion detection or monitoring 
     - Forwards response traffic from network appliances to target after inspection.
-
-
-
-

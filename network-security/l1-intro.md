@@ -1,6 +1,6 @@
 # L1-Introduction
 
-# Attack Types 
+## Attack Types 
 
 ## Passive Attacks (= “observation”)
 - Eavesdropping of messages

@@ -153,6 +153,3 @@ Bitcoin has three key properties:
 - Blocks have to reference 
 
 ### Account-based Ledger
-
-
-

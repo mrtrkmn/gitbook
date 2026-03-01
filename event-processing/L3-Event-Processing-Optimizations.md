@@ -147,7 +147,7 @@ Operator reordering between operators A and B is safe under the following condit
 > Ron Avnur and Joseph M. Hellerstein. 2000. Eddies: continuously adaptive query processing. In Proceedings of the 2000 ACM SIGMOD international conference on Management of data (SIGMOD '00). ACM, New York, NY, USA, 261-272. DOI=http://dx.doi.org.eaccess.ub.tum.de/10.1145/342009.335420
 
 
-## Redundancy Elimitation 
+## Redundancy Elimination 
 
 > Eliminate redundant computations 
 

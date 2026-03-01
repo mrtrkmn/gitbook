@@ -50,6 +50,3 @@ Since, online solutions had some indicents in past.
 Alice now wants to make two payments. She wants to transfer Carol 6,0 BTC and Bob 0,5 BTC. Draw the necessary transactions for Alice using the notation of diagram above.
 
 ![](../../.gitbook/assets/transactions_ex_5_sol.png)
-
-
-

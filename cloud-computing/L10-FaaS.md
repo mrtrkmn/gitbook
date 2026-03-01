@@ -11,7 +11,7 @@
 - Payment 
     - Per function invocation 
 
-# Serverless Computing 
+## Serverless Computing 
 
 - Synonym for FaaS 
 - Serverless means : **Application owners do not have to worry about the underlying execution infrastucture, most importantly physical or virtual servers**
@@ -34,7 +34,7 @@
 - Limited security: shared VMs, no control over the network 
 
 
-# Amazon Lambda 
+## Amazon Lambda 
 
 - 2014, first serverless offering by a public cloud provider 
 - Designed use cases such as: 
